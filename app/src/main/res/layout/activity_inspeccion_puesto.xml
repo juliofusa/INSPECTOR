@@ -1,0 +1,1010 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.eulen.inspector.InspeccionPUESTO"
+    android:background="#00ffffff"
+    android:id="@+id/texto">
+
+    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView24"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DESPERFECTOS VISITA"
+        android:id="@+id/textELEMENTOSAUX"
+        android:layout_below="@+id/spinINSPECTORP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ADM"
+        android:id="@+id/textView25"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinADM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/eRIESGOS"
+        android:layout_alignEnd="@+id/textView104"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView104"
+        android:layout_below="@+id/textView25"
+        android:layout_toStartOf="@+id/textView26"
+        android:background="#ff8dc9ff"
+        tools:layout_width="match_parent" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALIBRADO ADM    "
+        android:id="@+id/cCALIBRADO"
+        android:checked="false"
+        android:layout_alignTop="@+id/cOTROSP"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/editText85"
+        android:layout_alignRight="@+id/spinDETECTOR1"
+        android:layout_alignEnd="@+id/spinDETECTOR1" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinRX"
+        android:background="#ff8dc9ff"
+        android:layout_toRightOf="@+id/spinADM"
+        android:layout_toLeftOf="@+id/cOTROSP"
+        android:layout_toStartOf="@+id/cOTROSP"
+        android:layout_alignBottom="@+id/eRIESGOS"
+        android:layout_alignTop="@+id/spinADM" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="                          MAQUINA DE RX"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textELEMENTOSAUX"
+        android:layout_toRightOf="@+id/textELEMENTOSAUX"
+        android:layout_toEndOf="@+id/textELEMENTOSAUX"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="          DETECTOR DE LIQUIDOS"
+        android:id="@+id/textView27"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignLeft="@+id/cOTROSP"
+        android:layout_alignStart="@+id/cOTROSP"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinDETECTOR1"
+        android:layout_below="@+id/textView27"
+        android:background="#ff8dc9ff"
+        android:layout_alignRight="@+id/textView31"
+        android:layout_alignEnd="@+id/textView31"
+        android:layout_toEndOf="@+id/spinRX"
+        android:layout_alignLeft="@+id/cOTROSP"
+        android:layout_alignStart="@+id/cOTROSP"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="                        MAQUINA DE ZAPATOS"
+        android:id="@+id/textView28"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/spinDETECTOR1"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/spinZAPATOS1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView28"
+        android:layout_alignRight="@+id/textView28"
+        android:layout_below="@+id/spinDETECTOR1"
+        android:layout_toEndOf="@+id/textView31"
+        android:layout_toRightOf="@+id/textView31"
+        android:background="#ff8dc9ff"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTROS                    "
+        android:id="@+id/cOTROSP"
+        android:checked="false"
+        android:layout_alignTop="@+id/cORDENES_PUESTO"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ELEMENTOS AUXILIARES"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/cCALIBRADO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eINCIDENCIA"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="INCIDENCIA"
+        android:layout_toStartOf="@+id/cOTROSP"
+        android:singleLine="true"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/cOTROSP" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eRIESGOS"
+        android:hint="RIESGOS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/eINCIDENCIA"
+        android:layout_alignEnd="@+id/eINCIDENCIA"
+        android:layout_below="@+id/eINCIDENCIA"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eOBSERVACIONES"
+        android:hint="OBSERVACIONES"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eRIESGOS"
+        android:layout_alignRight="@+id/eRIESGOS"
+        android:layout_alignEnd="@+id/eRIESGOS"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verfototomada"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/cOTROSP"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/fondo_foto"
+        android:layout_alignRight="@+id/btomafotoVISITA"
+        android:layout_alignEnd="@+id/btomafotoVISITA"
+        android:layout_below="@+id/text_FOTO3"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DATOS INSPECTOR"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView24"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinINSPECTORP"
+        android:layout_below="@+id/textView30"
+        android:background="#ffff4a73"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView27"
+        android:layout_toLeftOf="@+id/textView27" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eFECHA"
+        android:layout_toRightOf="@+id/textView33"
+        android:layout_above="@+id/textELEMENTOSAUX"
+        android:hint="FECHA"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:textColor="#fff11f00"
+        android:layout_toStartOf="@+id/PU_PUESTO_B"
+        android:layout_alignRight="@+id/textView110"
+        android:layout_alignEnd="@+id/textView110" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinPUESTO"
+        android:layout_alignTop="@+id/spinINSPECTORP"
+        android:layout_toRightOf="@+id/eFECHA"
+        android:background="#ffff4a73"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PUESTO    "
+        android:id="@+id/textView31"
+        android:layout_above="@+id/spinPUESTO"
+        android:layout_alignLeft="@+id/spinPUESTO"
+        android:layout_alignStart="@+id/spinPUESTO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FOTOGRAFIAS"
+        android:id="@+id/textView32"
+        android:layout_alignBaseline="@+id/textView108"
+        android:layout_alignBottom="@+id/textView108"
+        android:layout_toLeftOf="@+id/cORDENES_PUESTO"
+        android:layout_toStartOf="@+id/cORDENES_PUESTO" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/INCIDENCIANTIGUA"
+        android:layout_alignRight="@+id/textView32"
+        android:layout_alignEnd="@+id/textView32"
+        android:layout_alignTop="@+id/eINCIDENCIA"
+        android:layout_toEndOf="@+id/spinDETECTOR1"
+        android:layout_alignBottom="@+id/eINCIDENCIA"
+        android:hint="INCIDENCIA"
+        android:layout_alignLeft="@+id/textView32"
+        android:layout_alignStart="@+id/textView32"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OBSERVACIONESANTIGUA"
+        android:layout_alignRight="@+id/INCIDENCIANTIGUA"
+        android:layout_alignEnd="@+id/INCIDENCIANTIGUA"
+        android:layout_toEndOf="@+id/spinDETECTOR1"
+        android:hint="OBSERVACIONES"
+        android:layout_below="@+id/INCIDENCIANTIGUA"
+        android:layout_alignLeft="@+id/INCIDENCIANTIGUA"
+        android:layout_alignStart="@+id/INCIDENCIANTIGUA"
+        android:singleLine="true"
+        android:layout_above="@+id/eOBSERVACIONES"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CORREGIDO SI/NO"
+        android:id="@+id/cCORREGIDO"
+        android:checked="false"
+        android:layout_alignBottom="@+id/bTOMARFOTOREPARACION"
+        android:layout_alignLeft="@+id/OBSERVACIONESANTIGUA"
+        android:layout_alignStart="@+id/OBSERVACIONESANTIGUA"
+        android:onClick="foto2"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FOTOANTERIOR"
+        android:layout_alignRight="@+id/OBSERVACIONESANTIGUA"
+        android:layout_alignEnd="@+id/OBSERVACIONESANTIGUA"
+        android:layout_toEndOf="@+id/eHORA"
+        android:adjustViewBounds="false"
+        android:src="@drawable/fondo_foto"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/cCORREGIDO"
+        android:layout_toRightOf="@+id/eHORA"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HACER FOTO"
+        android:id="@+id/bTOMARFOTOREPARACION"
+        android:onClick="foto2"
+        android:visibility="invisible"
+        android:layout_below="@+id/imagen4"
+        android:layout_alignBottom="@+id/btomafotoVISITA"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HACER FOTO 1/4"
+        android:id="@+id/btomafotoVISITA"
+        android:layout_alignBottom="@+id/eOBSERVACIONES"
+        android:onClick="botonTOMARFOTOVISITA"
+        android:visibility="invisible"
+        android:layout_below="@+id/eINCIDENCIA"
+        android:layout_alignRight="@+id/textView41"
+        android:layout_alignEnd="@+id/textView41"
+        android:layout_toRightOf="@+id/cPROCEDIMIENTO"
+        android:layout_toEndOf="@+id/cPROCEDIMIENTO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text                "
+        android:id="@+id/textView33"
+        android:visibility="invisible"
+        android:layout_above="@+id/textView30"
+        android:layout_toRightOf="@+id/spinINSPECTORP"
+        android:layout_alignTop="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/eHORA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textELEMENTOSAUX"
+        android:layout_alignEnd="@+id/textView33"
+        android:layout_alignRight="@+id/textView33"
+        android:layout_alignTop="@+id/eFECHA"
+        android:layout_toEndOf="@+id/spinINSPECTORP"
+        android:layout_toRightOf="@+id/spinINSPECTORP"
+        android:clickable="false"
+        android:editable="false"
+        android:gravity="center_horizontal"
+        android:hint="HORA"
+        android:textColor="#fff11f00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="REGISTROS:0/0"
+        android:id="@+id/PU_panel"
+        android:textColor="#ff000000"
+        android:background="#fffffb23"
+        android:layout_alignBottom="@+id/bguardarPUESTO1"
+        android:layout_alignLeft="@+id/button24"
+        android:layout_alignStart="@+id/button24"
+        android:layout_below="@+id/spinZAPATOS"
+        android:layout_alignRight="@+id/button24"
+        android:layout_alignEnd="@+id/button24" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B_PUESTO_PRIMERO"
+        android:src="@android:drawable/ic_media_previous"
+        android:onClick="BOTON_PRIMER"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView28"
+        android:layout_below="@+id/imagen4"
+        android:layout_toRightOf="@+id/verfototomada"
+        android:layout_toEndOf="@+id/verfototomada" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PU_ANTERIOR"
+        android:src="@android:drawable/ic_media_rew"
+        android:onClick="BOTON_ANTERIOR"
+        android:visibility="invisible"
+        android:layout_below="@+id/imagen4"
+        android:layout_toLeftOf="@+id/cCORREGIDO"
+        android:layout_toRightOf="@+id/textView27"
+        android:layout_toEndOf="@+id/textView27" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PU_SIGUIENTE"
+        android:src="@android:drawable/ic_media_ff"
+        android:onClick="BOTON_SIGUIENTE"
+        android:visibility="invisible"
+        android:layout_below="@+id/scrollView4"
+        android:layout_toLeftOf="@+id/BOTON_REGISTROS"
+        android:layout_toRightOf="@+id/PU_ANTERIOR"
+        android:layout_toEndOf="@+id/PU_ANTERIOR" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PU_FIN"
+        android:src="@android:drawable/ic_media_next"
+        android:onClick="BOTON_ULTIMO"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/bTOMARFOTOREPARACION"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/PU_SIGUIENTE"
+        android:layout_toEndOf="@+id/PU_SIGUIENTE" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PU_INSPECTOR_B"
+        android:layout_above="@+id/textELEMENTOSAUX"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/eHORA"
+        android:background="#ffff4a73"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_alignTop="@+id/spinINSPECTORP"
+        android:layout_toLeftOf="@+id/eHORA" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PU_PUESTO_B"
+        android:layout_alignBottom="@+id/spinPUESTO"
+        android:background="#ffff4a73"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_alignTop="@+id/spinPUESTO"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView110"
+        android:layout_toEndOf="@+id/textView110" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VER REGISTROS"
+        android:id="@+id/BOTON_REGISTROS"
+        android:onClick="VER_REGISTROS"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/cCORREGIDO"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROCEDIMIENTO"
+        android:id="@+id/cPROCEDIMIENTO"
+        android:checked="true"
+        android:layout_toEndOf="@+id/textView29"
+        android:layout_alignTop="@+id/spinZAPATOS"
+        android:layout_toRightOf="@+id/textView29" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORDENES DEL PUESTO"
+        android:id="@+id/cORDENES_PUESTO"
+        android:checked="true"
+        android:layout_below="@+id/spinDETECTOR1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView41"
+        android:layout_above="@+id/spinINSPECTORP"
+        android:layout_toRightOf="@+id/textView26"
+        android:layout_toEndOf="@+id/textView26"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_ADM"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinRX"
+        android:layout_below="@+id/textView25"
+        android:clickable="false"
+        android:editable="false"
+        android:background="#ff8dc9ff"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/spinADM"
+        android:layout_alignRight="@+id/textView104"
+        android:layout_alignEnd="@+id/textView104" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_RX"
+        android:layout_toLeftOf="@+id/spinDETECTOR1"
+        android:background="#ff8dc9ff"
+        android:clickable="false"
+        android:editable="false"
+        android:visibility="invisible"
+        android:layout_above="@+id/eOBSERVACIONES"
+        android:layout_alignTop="@+id/spinRX"
+        android:layout_toRightOf="@+id/textView104"
+        android:layout_toEndOf="@+id/textView104" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_LIQUIDOS"
+        android:background="#ff8dc9ff"
+        android:clickable="false"
+        android:editable="false"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/spinDETECTOR"
+        android:layout_alignLeft="@+id/textView106"
+        android:layout_alignStart="@+id/textView106"
+        android:layout_below="@+id/textView109"
+        android:layout_alignRight="@+id/spinRX"
+        android:layout_alignEnd="@+id/spinRX" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_ZAPATOS"
+        android:background="#ff8dc9ff"
+        android:clickable="false"
+        android:editable="false"
+        android:visibility="invisible"
+        android:layout_above="@+id/PU_panel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/cPROCEDIMIENTO"
+        android:layout_toLeftOf="@+id/PU_panel"
+        android:layout_toStartOf="@+id/PU_panel" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagen2"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/PU_ANTERIOR"
+        android:layout_below="@+id/textView46"
+        android:layout_toRightOf="@+id/cORDENES_PUESTO"
+        android:layout_alignRight="@+id/imagen3"
+        android:layout_alignEnd="@+id/imagen3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagen3"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/cORDENES_PUESTO"
+        android:layout_alignBottom="@+id/textView46"
+        android:layout_toRightOf="@+id/cORDENES_PUESTO"
+        android:layout_below="@+id/OBSERVACIONESANTIGUA" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagen4"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:layout_below="@+id/btomafotoVISITA"
+        android:layout_alignLeft="@+id/FOTOANTERIOR"
+        android:layout_alignStart="@+id/FOTOANTERIOR"
+        android:layout_above="@+id/BOTON_REGISTROS"
+        android:layout_toLeftOf="@+id/imagen2"
+        android:layout_toStartOf="@+id/imagen2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FOTO 1"
+        android:id="@+id/textView46"
+        android:textColor="#ff45ac0e"
+        android:backgroundTint="#fffffc09"
+        android:backgroundTintMode="multiply"
+        android:background="#fffffc09"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/bTOMARFOTOREPARACION"
+        android:layout_alignRight="@+id/imagen2"
+        android:layout_alignEnd="@+id/imagen2"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FOTO 2"
+        android:id="@+id/text_FOTO2"
+        android:textColor="#ff45ac0e"
+        android:background="#fffffc09"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/imagen3"
+        android:layout_alignRight="@+id/imagen3"
+        android:layout_alignEnd="@+id/imagen3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FOTO 3"
+        android:id="@+id/text_FOTO3"
+        android:textColor="#ff45ac0e"
+        android:background="#fffffc09"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/FOTOANTERIOR"
+        android:layout_toLeftOf="@+id/imagen3"
+        android:layout_toStartOf="@+id/imagen3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FOTO 1"
+        android:id="@+id/text_FOTO1"
+        android:layout_below="@+id/imagen3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff45ac0e"
+        android:background="#fffffc09"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/imagen2"
+        android:layout_alignLeft="@+id/textView46"
+        android:layout_alignStart="@+id/textView46" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bTOMARFOTOREPARACION"
+        android:layout_alignEnd="@+id/bTOMARFOTOREPARACION"
+        android:layout_alignRight="@+id/bTOMARFOTOREPARACION"
+        android:layout_below="@+id/textView32"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/btomafotoVISITA"
+        android:layout_toRightOf="@+id/btomafotoVISITA"
+        android:background="#ffffe09a"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button20"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="boton_TOMARFOTO1"
+                android:text="TOMAR FOTO 1" />
+
+            <ImageView
+                android:id="@+id/toma1_puesto"
+                android:layout_width="fill_parent"
+                android:layout_height="320dp"
+                android:background="#ff4a5eff"
+                android:scaleType="fitXY"
+                android:src="@drawable/fondo_foto" />
+
+            <Button
+                android:id="@+id/button21"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="boton_TOMARFOTO2"
+                android:text="TOMAR FOTO 2" />
+
+            <ImageView
+                android:id="@+id/toma2_puesto"
+                android:layout_width="fill_parent"
+                android:layout_height="320dp"
+                android:background="#ffff968a"
+                android:scaleType="fitXY"
+                android:src="@drawable/fondo_foto" />
+
+            <Button
+                android:id="@+id/button22"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="boton_TOMARFOTO3"
+                android:text="TOMAR FOTO 3"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/toma3_puesto"
+                android:layout_width="fill_parent"
+                android:layout_height="320dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fondo_foto" />
+
+            <Button
+                android:id="@+id/button23"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="boton_TOMARFOTO4"
+                android:text="TOMAR FOTO 4" />
+
+            <ImageView
+                android:id="@+id/toma4_puesto"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fondo_foto" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BARRERAS"
+        android:id="@+id/textView104"
+        android:layout_below="@+id/spinADM"
+        android:layout_toLeftOf="@+id/textView106"
+        android:layout_alignBottom="@+id/text_FOTO2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_BARRERAS"
+        android:background="#ff8dc9ff"
+        android:layout_below="@+id/textView104"
+        android:layout_alignLeft="@+id/textView104"
+        android:layout_alignStart="@+id/textView104"
+        android:layout_alignRight="@+id/textView104"
+        android:layout_alignEnd="@+id/textView104" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TORNOS"
+        android:id="@+id/textView105"
+        android:layout_below="@+id/spinner_BARRERAS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_TORNOS"
+        android:layout_below="@+id/textView105"
+        android:background="#ff8dc9ff"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/spinner_TRAZAS"
+        android:layout_toStartOf="@+id/spinner_TRAZAS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="MAQUINA DE TRAZAS"
+        android:id="@+id/textView106"
+        android:layout_below="@+id/spinRX"
+        android:layout_alignLeft="@+id/spinner_TRAZAS"
+        android:layout_alignStart="@+id/spinner_TRAZAS" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_TRAZAS"
+        android:background="#ff8dc9ff"
+        android:layout_below="@+id/textView106"
+        android:layout_alignLeft="@+id/cPROCEDIMIENTO"
+        android:layout_alignStart="@+id/cPROCEDIMIENTO"
+        android:layout_toLeftOf="@+id/cOTROSP"
+        android:layout_toStartOf="@+id/cOTROSP" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinDETECTOR"
+        android:layout_alignTop="@+id/spinner_TORNOS"
+        android:layout_toRightOf="@+id/spinner_TORNOS"
+        android:layout_toLeftOf="@+id/cOTROSP"
+        android:layout_toStartOf="@+id/cOTROSP"
+        android:layout_alignBottom="@+id/spinner_TORNOS"
+        android:background="#ff8dc9ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="MAQUINA DE  ZAPATOS"
+        android:id="@+id/textView107"
+        android:layout_below="@+id/spinner_TORNOS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinZAPATOS"
+        android:layout_below="@+id/textView107"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView109"
+        android:background="#ff8dc9ff"
+        android:layout_toLeftOf="@+id/textView109" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="MAQUINA RX"
+        android:id="@+id/textView108"
+        android:layout_alignTop="@+id/eINCIDENCIA"
+        android:layout_alignLeft="@+id/cPROCEDIMIENTO"
+        android:layout_alignStart="@+id/cPROCEDIMIENTO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="DETECTOR DE LIQUIDOS"
+        android:id="@+id/textView109"
+        android:layout_toEndOf="@+id/spinner_TORNOS"
+        android:layout_alignTop="@+id/textView105"
+        android:layout_above="@+id/spinDETECTOR"
+        android:layout_alignLeft="@+id/spinDETECTOR"
+        android:layout_alignStart="@+id/spinDETECTOR" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText85"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textELEMENTOSAUX"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/editText84"
+        android:layout_toStartOf="@+id/editText84"
+        android:hint="INCIDENCIA" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText86"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinDETECTOR1"
+        android:singleLine="true"
+        android:hint="OBSERVACIONES"
+        android:layout_below="@+id/editText85"
+        android:layout_alignBottom="@+id/cOTROSP"
+        android:layout_toLeftOf="@+id/spinDETECTOR1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText84"
+        android:singleLine="true"
+        android:layout_alignRight="@+id/textView28"
+        android:layout_alignEnd="@+id/textView28"
+        android:layout_toEndOf="@+id/eHORA"
+        android:layout_toRightOf="@+id/eHORA"
+        android:hint="RIESGOS"
+        android:layout_alignBottom="@+id/editText85"
+        android:layout_alignTop="@+id/textView27" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView110"
+        android:layout_alignTop="@+id/textView33"
+        android:layout_toRightOf="@+id/textView33"
+        android:layout_toEndOf="@+id/textView33"
+        android:visibility="invisible" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/bguardarPUESTO1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinZAPATOS"
+        android:layout_toLeftOf="@+id/cPROCEDIMIENTO"
+        android:layout_toStartOf="@+id/cPROCEDIMIENTO"
+        android:visibility="invisible" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/bguardarPUESTO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bguardarPUESTO1"
+        android:layout_toLeftOf="@+id/cPROCEDIMIENTO"
+        android:layout_toStartOf="@+id/cPROCEDIMIENTO"
+        android:onClick="guardarREGISTRO" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VER REGISTROS"
+        android:id="@+id/button24"
+        android:layout_alignLeft="@+id/cPROCEDIMIENTO"
+        android:layout_alignStart="@+id/cPROCEDIMIENTO"
+        android:layout_below="@+id/bguardarPUESTO1"
+        android:layout_alignRight="@+id/PUESTO_RX"
+        android:layout_alignEnd="@+id/PUESTO_RX"
+        android:onClick="VER_REGISTROS" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_BARRERAS"
+        android:layout_below="@+id/textView104"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView105"
+        android:layout_toLeftOf="@+id/textView106"
+        android:layout_toStartOf="@+id/textView106"
+        android:background="#ff8dc9ff"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_TORNOS"
+        android:layout_alignTop="@+id/spinner_TORNOS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/PUESTO_LIQUIDOS"
+        android:layout_toStartOf="@+id/PUESTO_LIQUIDOS"
+        android:layout_above="@+id/textView107"
+        android:background="#ff8dc9ff"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PUESTO_TRAZAS"
+        android:layout_below="@+id/textView104"
+        android:layout_toRightOf="@+id/textView104"
+        android:layout_alignRight="@+id/eOBSERVACIONES"
+        android:layout_alignEnd="@+id/eOBSERVACIONES"
+        android:layout_above="@+id/textView109"
+        android:background="#ff8dc9ff"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

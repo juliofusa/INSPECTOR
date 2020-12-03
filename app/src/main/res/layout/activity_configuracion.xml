@@ -1,0 +1,568 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    tools:context="com.example.eulen.inspector.Configuracion"
+    android:id="@+id/TEXT"
+    android:background="@android:color/white">
+
+    <TextView android:text="FICHA VIGILANTES" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignRight="@+id/VS_TIP"
+        android:layout_alignEnd="@+id/VS_TIP"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center|center_vertical"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_TIP"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_NOMBRE"
+        android:layout_alignEnd="@+id/VS_NOMBRE"
+        android:hint="TIP" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/VS_NOMBRE"
+        android:layout_below="@+id/VS_TIP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="NOMBRE" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/VS_APELLIDOS1"
+        android:layout_below="@+id/VS_NOMBRE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="APELIDO1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/VS_APELLIDOS2"
+        android:layout_below="@+id/VS_APELLIDOS1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="APELLIDO2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS NUEVO/S"
+        android:id="@+id/VS_BTGUARDAR"
+        android:onClick="vsguardar"
+        android:layout_below="@+id/VS_BTIMPORTAR"
+        android:layout_alignRight="@+id/VS_BTEDITAR"
+        android:layout_alignEnd="@+id/VS_BTEDITAR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_DNI"
+        android:layout_below="@+id/VS_APELLIDOS2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_APELLIDOS2"
+        android:layout_alignEnd="@+id/VS_APELLIDOS2"
+        android:hint="DNI" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTAR"
+        android:id="@+id/VS_BTIMPORTAR"
+        android:onClick="importarvs"
+        android:layout_below="@+id/VS_BTEDITAR"
+        android:layout_alignRight="@+id/VS_BTEDITAR"
+        android:layout_alignEnd="@+id/VS_BTEDITAR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:text="INSPECION MANUAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_marginLeft="79dp"
+        android:layout_marginStart="79dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/AENA_NOCONFORME"
+        android:hint="NOMBRE"
+        android:layout_alignTop="@+id/VS_TIP"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/button7"
+        android:layout_above="@+id/VS_DNI"
+        android:layout_toLeftOf="@+id/textView7"
+        android:layout_alignLeft="@+id/AENA_NOCONFORME"
+        android:layout_alignStart="@+id/AENA_NOCONFORME"
+        android:onClick="AENAguardar" />
+
+    <TextView
+        android:text="IMPORTAR VS/ORDEN/PUESTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="90dp"
+        android:layout_above="@+id/INS_NOMBRE"
+        android:layout_toRightOf="@+id/AENA_NOCONFORME"
+        android:visibility="visible"
+        android:gravity="center_vertical" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/INS_NOMBRE"
+        android:hint="NOMBRE"
+        android:layout_alignTop="@+id/AENA_NOCONFORME"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignStart="@+id/INS_NOMBRE"
+        android:layout_alignTop="@+id/INS_NOMBRE"
+        android:background="@drawable/boton_redondo"
+        android:onClick="importar_ORDENES"
+        android:text="IMPORTAR ORDENES"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/INS_DNI"
+        android:hint="DNI"
+        android:layout_below="@+id/INS_NOMBRE"
+        android:layout_alignLeft="@+id/INS_NOMBRE"
+        android:layout_alignStart="@+id/INS_NOMBRE"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="IMPORTAR TEST FORMACION"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_alignRight="@+id/PUESTO_NOMBRE"
+        android:layout_alignEnd="@+id/PUESTO_NOMBRE"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toEndOf="@+id/INS_NOMBRE" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/PUESTO_NOMBRE"
+        android:hint="NOMBRE"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTAR TEXT"
+        android:id="@+id/button9"
+        android:visibility="visible"
+        android:onClick="importar_TEST"
+        android:layout_alignTop="@+id/PUESTO_NOMBRE"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/INS_NOMBRE"
+        android:layout_alignBottom="@+id/button8"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDITAR"
+        android:id="@+id/VS_BTEDITAR"
+        android:onClick="EDITARVS"
+        android:layout_above="@+id/VS_BUSCAR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_ID"
+        android:layout_alignEnd="@+id/VS_ID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0/0"
+        android:id="@+id/VS_PANEL"
+        android:background="#50ffec53"
+        android:textColor="#ff000000"
+        android:layout_above="@+id/VS_BTPRIMERO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_DNI"
+        android:layout_alignEnd="@+id/VS_DNI" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_BTPRIMERO"
+        android:src="@android:drawable/ic_media_previous"
+        android:nestedScrollingEnabled="false"
+        android:onClick="reginiciovs"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_BTATRAS"
+        android:layout_alignBottom="@+id/VS_BTPRIMERO"
+        android:layout_toRightOf="@+id/VS_BTPRIMERO"
+        android:layout_toEndOf="@+id/VS_BTPRIMERO"
+        android:src="@android:drawable/ic_media_rew"
+        android:onClick="regPREVvs"
+        android:visibility="invisible"
+        android:longClickable="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_BTAVANCE"
+        android:layout_alignBottom="@+id/VS_BTATRAS"
+        android:layout_toRightOf="@+id/VS_BTATRAS"
+        android:layout_toEndOf="@+id/VS_BTATRAS"
+        android:src="@android:drawable/ic_media_ff"
+        android:onClick="regNEXTvs"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_BTULTIMO"
+        android:layout_alignTop="@+id/VS_BTAVANCE"
+        android:layout_toRightOf="@+id/VS_BTAVANCE"
+        android:layout_toEndOf="@+id/VS_BTAVANCE"
+        android:src="@android:drawable/ic_media_next"
+        android:onClick="regFINvs"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BORRAR"
+        android:id="@+id/VS_BTBORRAR"
+        android:background="#81ff7575"
+        android:onClick="BorrarVS"
+        android:visibility="invisible"
+        android:layout_above="@+id/VS_PANEL"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_BTGUARDAR"
+        android:layout_alignEnd="@+id/VS_BTGUARDAR" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTUALIZAR"
+        android:id="@+id/VS_BTUPDATE"
+        android:background="#ffa1e58d"
+        android:onClick="ACTUALIZAVS"
+        android:visibility="invisible"
+        android:layout_below="@+id/VS_BTEDITAR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUSCAR"
+        android:id="@+id/VS_BUSCAR"
+        android:background="#ffafa9ff"
+        android:visibility="invisible"
+        android:layout_above="@+id/VS_BTBORRAR"
+        android:layout_toStartOf="@+id/VS_BTEDITAR"
+        android:layout_marginBottom="50dp"
+        android:layout_alignRight="@+id/VS_ID"
+        android:layout_alignEnd="@+id/VS_ID"
+        android:onClick="BT_VS_BUSCAR" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_ID"
+        android:layout_below="@+id/VS_DNI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_DNI"
+        android:layout_alignEnd="@+id/VS_DNI"
+        android:hint="ID ESCANER" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_PASSWORD"
+        android:layout_below="@+id/VS_ID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_ID"
+        android:layout_alignEnd="@+id/VS_ID"
+        android:hint="PASSWORD ESCANER" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VS_TELEFONO"
+        android:layout_below="@+id/VS_PASSWORD"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/VS_PASSWORD"
+        android:layout_alignEnd="@+id/VS_PASSWORD"
+        android:hint="TELEFONO" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_NOMBRE"
+        android:layout_alignBottom="@+id/VS_BTIMPORTAR"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:layout_alignRight="@+id/button8"
+        android:layout_alignEnd="@+id/button8"
+        android:background="#ffafa9ff"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BUSCAR: POR NOMBRE COMPLETO."
+        android:id="@+id/con_text_nombre_completo"
+        android:layout_above="@+id/spinner_NOMBRE"
+        android:layout_alignLeft="@+id/spinner_NOMBRE"
+        android:layout_alignStart="@+id/spinner_NOMBRE"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_TIP"
+        android:layout_below="@+id/VS_BTGUARDAR"
+        android:layout_alignLeft="@+id/spinner_NOMBRE"
+        android:layout_alignStart="@+id/spinner_NOMBRE"
+        android:layout_toStartOf="@+id/button9"
+        android:layout_alignRight="@+id/spinner_NOMBRE"
+        android:layout_alignEnd="@+id/spinner_NOMBRE"
+        android:background="#ffafa9ff"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BUSCAR: POR TIP"
+        android:id="@+id/con_text_tip"
+        android:layout_above="@+id/VS_BTBORRAR"
+        android:layout_alignLeft="@+id/spinner_TIP"
+        android:layout_alignStart="@+id/spinner_TIP"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSPECCIONES. MAN"
+        android:id="@+id/button17"
+        android:layout_below="@+id/VS_DNI"
+        android:layout_alignRight="@+id/button7"
+        android:layout_alignEnd="@+id/button7"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:onClick="INSPECCIONES_PORDEFECTO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="IMPORTAR INSPECTORES"
+        android:id="@+id/textView126"
+        android:layout_alignStart="@+id/button9"
+        android:layout_alignTop="@+id/VS_PASSWORD"
+        android:layout_alignEnd="@+id/button9"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_purple" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTAR INSPECTORES"
+        android:id="@+id/IMPORTAR_INSPECTORES"
+        android:layout_below="@+id/textView126"
+        android:layout_alignStart="@+id/textView126"
+        android:onClick="importar_INSPECTORES"
+        android:layout_toStartOf="@+id/añadir_registro_inspector"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/añadir_registro_inspector"
+        android:layout_below="@+id/textView126"
+        android:layout_alignEnd="@+id/textView126"
+        android:layout_alignBottom="@+id/IMPORTAR_INSPECTORES"
+        android:layout_marginTop="5dp"
+        android:onClick="ver_inspectores"
+        android:background="@drawable/boton_redondo_naranja"
+        android:layout_marginLeft="3dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir Inspector"
+        android:id="@+id/anadir_inspector"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:onClick="add_inspector"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/IMPORTAR_INSPECTORES"
+        android:layout_below="@+id/IMPORTAR_INSPECTORES"
+        android:background="@drawable/boton_redondo_naranja" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autocompletar"
+        android:hint="APELLIDOS, NOMBRE"
+        android:visibility="invisible"
+        android:layout_below="@+id/anadir_inspector"
+        android:layout_alignStart="@+id/anadir_inspector"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IMPORTAR AUXILIARES"
+        android:id="@+id/textView141"
+        android:layout_below="@+id/button9"
+        android:layout_alignStart="@+id/button9"
+        android:layout_alignEnd="@+id/button9"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff5e89ff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTAR AUX"
+        android:id="@+id/button10"
+        android:onClick="importaraux"
+        android:background="@drawable/boton_redondo"
+        android:layout_below="@+id/textView141"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView141"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IMPORTAR VS"
+        android:id="@+id/textView142"
+        android:layout_below="@+id/button10"
+        android:layout_alignStart="@+id/button10"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff5e89ff"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMPORTAR VS"
+        android:id="@+id/button26"
+        android:layout_below="@+id/textView142"
+        android:layout_alignStart="@+id/textView126"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@android:color/white"
+        android:onClick="importarvs" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView142"
+        android:layout_alignEnd="@+id/button8"
+        android:layout_alignStart="@+id/INS_DNI"
+        android:background="@drawable/boton_redondo"
+        android:onClick="importar_FORMADORES"
+        android:text="@string/I_FORMADORES"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button26"
+        android:layout_alignEnd="@+id/button27"
+        android:layout_alignStart="@+id/button27"
+        android:background="@drawable/boton_redondo"
+        android:onClick="importarpuestos"
+        android:text="@string/LISTA_PUESTOS"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.julio.inspector">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/log_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"></meta-data>
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InspeccionesVS"
+            android:label="@string/title_activity_inspecciones_vs"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".InspeccionPUESTO"
+            android:label="@string/title_activity_inspeccion_puesto"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Configuracion"
+            android:label="@string/title_activity_configuracion"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".EXPORTAR"
+            android:label="@string/title_activity_exportar"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ENSAYO"
+            android:label="@string/title_activity_ensayo"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".INFO"
+            android:label="@string/title_activity_info"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Fichas_personal"
+            android:label="@string/title_activity_fichas_personal"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".VACACIONES"
+            android:label="@string/title_activity_vacaciones" />
+        <activity
+            android:name=".ROPA"
+            android:label="@string/title_activity_rop"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".CALIBRADO_ADM"
+            android:label="@string/title_activity_calibrado__adm"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Inspecciones_manuales"
+            android:label="@string/title_activity_inspecciones_manuales"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".firmas"
+            android:label="@string/title_activity_firmas"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MENU_TEST"
+            android:label="@string/title_activity_menu__test"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".TEST"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".listado_ordenes"
+            android:label="@string/title_activity_listado_ordenes"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".ej1" />
+        <activity
+            android:name=".ver_puestos"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Anime_cardview" />
+        <activity android:name=".TEST_VARIABLE" />
+        <activity android:name=".ENSAYO2" />
+
+        <activity android:name=".pdfview"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>

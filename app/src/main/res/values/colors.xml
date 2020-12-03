@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="Color_amarillo_reg">#e4fbff39</color>
+    <color name="Color_GRIS_perla">#e3c2c2c2</color>
+    <color name="Color_coral_red">#fe8f8f</color>
+    <color name="amarillo">#fdffe5</color>
+</resources>

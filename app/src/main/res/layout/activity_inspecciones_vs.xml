@@ -1,0 +1,1032 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.eulen.inspector.InspeccionesVS"
+    android:id="@+id/text">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="DATOS DEL INSPECTOR"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/S_INSPECTOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_below="@+id/textView2"
+        android:background="@drawable/boton_redondo"
+        android:overlapAnchor="false"
+        android:paddingLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DATOS DEL VIGILANTE"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/S_INSPECTOR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/s_TIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/S_INSPECTOR"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/S_INSPECTOR"
+        android:layout_below="@+id/textView3"
+        android:background="#ff9fa3ff"
+        android:overlapAnchor="false"
+        android:paddingLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NOMBRE PUESTO"
+        android:id="@+id/textView4"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_above="@+id/Spuesto"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11" />
+
+    <Spinner
+        android:id="@+id/Spuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_toRightOf="@+id/textView11"
+        android:background="#9eff3932"
+        android:overlapAnchor="false"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinDENFENSA"
+        android:background="#ffffbd19"
+        android:overlapAnchor="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinGRILLETES"
+        android:layout_alignRight="@+id/s_TIP"
+        android:layout_alignEnd="@+id/s_TIP"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/textView17" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editHORA"
+        android:hint="HORA"
+        android:gravity="center|center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:textColor="#fff11f00"
+        android:layout_alignBottom="@+id/S_INSPECTOR"
+        android:layout_alignStart="@+id/ver_VS_ABRIGO"
+        android:layout_toStartOf="@+id/editFECHA"
+        android:layout_below="@+id/textView10"
+        android:textAlignment="center"
+        android:background="#fffff0eb"
+        android:layout_margin="2dp" />
+    android:gravity="center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:textColor="#fff11f00"
+        android:layout_alignTop="@+id/editFECHA"
+        android:layout_toRightOf="@+id/Sinspector"
+        android:layout_toLeftOf="@+id/editFECHA"
+        android:layout_toStartOf="@+id/editFECHA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NOMBRE"
+        android:id="@+id/textView9"
+        android:visibility="visible"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_above="@+id/S_INSPECTOR"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toEndOf="@+id/textView14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HORA"
+        android:id="@+id/textView10"
+        android:layout_above="@+id/S_INSPECTOR"
+        android:layout_toLeftOf="@+id/textView11"
+        android:layout_marginRight="68dp"
+        android:layout_marginEnd="68dp"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/editFECHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Spuesto"
+        android:layout_below="@+id/textView10"
+        android:layout_margin="2dp"
+        android:layout_toEndOf="@+id/VSdni"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toRightOf="@+id/VSdni"
+        android:background="#fffff0eb"
+        android:clickable="false"
+        android:editable="false"
+        android:gravity="center|center_horizontal"
+        android:hint="FECHA"
+        android:textColor="#fff11f00" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VSdni"
+        android:layout_alignBottom="@+id/s_TIP"
+        android:layout_toRightOf="@+id/s_TIP"
+        android:hint="DNI"
+
+
+        android:editable="false"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:clickable="false"
+        android:textColor="#ff1219a5"
+        android:layout_below="@+id/textView22"
+        android:background="#fff4f2ff"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VSnombre"
+        android:layout_alignBottom="@+id/s_TIP"
+        android:layout_toRightOf="@+id/VSdni"
+        android:hint="NOMBRE"
+
+        android:editable="false"
+        android:layout_toStartOf="@+id/vsAPELLIDO1"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:clickable="false"
+        android:textColor="#ff1219a5"
+        android:layout_toLeftOf="@+id/vsAPELLIDO1"
+        android:layout_below="@+id/VS_INSPECCIONADO"
+        android:layout_margin="1dp"
+        android:background="#fff4f2ff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vsAPELLIDO1"
+        android:layout_alignBottom="@+id/s_TIP"
+        android:hint="APELLIDO1"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:textColor="#ff1219a5"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/VS_INSPECCIONADO"
+        android:layout_margin="1dp"
+        android:background="#fff4f2ff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HORA"
+        android:id="@+id/textView11"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vsAPELLIDO2"
+        android:hint="APELLIDO2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_toEndOf="@+id/vsAPELLIDO1"
+        android:layout_toRightOf="@+id/vsAPELLIDO1"
+        android:textColor="#ff1219a5"
+        android:layout_below="@+id/VS_INSPECCIONADO"
+        android:background="#fff4f2ff"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_above="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PRENDAS UNIFORMES"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/s_TIP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinZAPATOS1"
+        android:background="#ffd1fff6"
+        android:overlapAnchor="false"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView10"
+        android:layout_alignRight="@+id/s_TIP"
+        android:layout_alignEnd="@+id/s_TIP"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinPANTALON"
+        android:background="#ffd1fff6"
+        android:overlapAnchor="false"
+        android:layout_alignTop="@+id/spinZAPATOS1"
+        android:layout_alignLeft="@+id/ver_VS_PANTALON"
+        android:layout_alignStart="@+id/ver_VS_PANTALON"
+        android:layout_toLeftOf="@+id/textView15"
+        android:layout_toStartOf="@+id/textView15"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinCAZADORA"
+        android:background="#ffd1fff6"
+        android:overlapAnchor="false"
+        android:layout_alignTop="@+id/spinPANTALON"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/VSnombre"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinCAMISA"
+        android:background="#ffd1fff6"
+        android:overlapAnchor="false"
+        android:layout_below="@+id/textCAMISA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/textView18"
+        android:layout_toStartOf="@+id/textView18"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinABRIGO"
+        android:background="#ffd1fff6"
+        android:overlapAnchor="false"
+        android:layout_alignTop="@+id/spinCAMISA"
+        android:layout_toRightOf="@+id/spinCAMISA"
+        android:layout_toStartOf="@+id/checkINCORRECTO"
+        android:layout_marginLeft="2dp"
+        android:layout_alignEnd="@+id/ver_VS_ABRIGO"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinEPI"
+        android:layout_alignBottom="@+id/spinABRIGO"
+        android:background="#ffd1fff6"
+        android:overlapAnchor="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/spinABRIGO"
+        android:layout_marginLeft="2dp"
+        android:paddingLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ELEMENTOS AUXILIARES OBLIGATORIAS"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/spinCAMISA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinGRILLETES"
+        android:background="#ffffbd19"
+        android:overlapAnchor="false"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignBottom="@+id/spinDENFENSA"
+        android:paddingLeft="3dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinCORREAJES"
+        android:background="#ffffbd19"
+        android:overlapAnchor="false"
+        android:layout_toRightOf="@+id/spinGRILLETES"
+        android:layout_toStartOf="@+id/editOTROS_inspeccionvs"
+        android:layout_toLeftOf="@+id/editOTROS_inspeccionvs"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignTop="@+id/spinGRILLETES"
+        android:layout_alignBottom="@+id/spinGRILLETES"
+        android:paddingLeft="3dp"
+        android:dropDownSelector="@color/accent_material_light"
+        android:contentDescription="Correajes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FUNCIONES DEL PUESTO"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/editOTROS_inspeccionvs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinDESMP"
+        android:background="#fffc06ff"
+        android:overlapAnchor="false"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible"
+        android:paddingLeft="3dp"
+        android:layout_alignEnd="@+id/ver_VS_VIGILANTE" />
+
+    <CheckBox
+        android:id="@+id/checkORDENES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinDESMP"
+        android:button="@drawable/checbox_background"
+        android:checked="false"
+        android:onClick="ORDENESPUESTO"
+        android:paddingLeft="7dp"
+        android:text="Tiene Firmado hoja de las ordenes de puesto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editOTROS_inspeccionvs"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="8dp"
+        android:layout_alignBottom="@+id/spinCORREAJES"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/vsAPELLIDO1"
+        android:hint="OTROS"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/vsAPELLIDO1"
+        android:layout_below="@+id/textView19"
+        android:gravity="center|center_vertical"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_orange_light"
+        android:textStyle="italic"
+        android:maxLength="35" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CAMISA"
+        android:id="@+id/textCAMISA"
+        android:layout_below="@+id/spinZAPATOS1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ABRIGO"
+        android:id="@+id/textABRIGO"
+        android:layout_above="@+id/spinCAMISA"
+        android:layout_toRightOf="@+id/spinZAPATOS1"
+        android:layout_toEndOf="@+id/spinZAPATOS1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="EPIS"
+        android:id="@+id/textView15"
+        android:layout_toRightOf="@+id/spinABRIGO"
+        android:layout_toEndOf="@+id/spinABRIGO"
+        android:layout_above="@+id/spinEPI" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ZAPATOS"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="PANTALON"
+        android:id="@+id/textPANTALON"
+        android:layout_above="@+id/spinPANTALON"
+        android:layout_toRightOf="@+id/spinZAPATOS1"
+        android:layout_toEndOf="@+id/spinZAPATOS1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CAZADORA"
+        android:id="@+id/textCAZADORA"
+        android:layout_toRightOf="@+id/spinPANTALON"
+        android:layout_toEndOf="@+id/spinPANTALON"
+        android:layout_alignTop="@+id/textPANTALON" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="DEFENSA"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="GRILLETES"
+        android:id="@+id/textView18"
+        android:layout_alignStart="@+id/spinGRILLETES"
+        android:layout_below="@+id/textView13"
+        android:layout_alignBottom="@+id/textView17" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CORREAJES"
+        android:id="@+id/textView19"
+        android:layout_toRightOf="@+id/spinCORRECION"
+        android:layout_toEndOf="@+id/spinCORRECION"
+        android:layout_below="@+id/textView13"
+        android:layout_above="@+id/spinCORREAJES"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CORRECTO SI"
+        android:id="@+id/checkCORRECTO"
+        android:checked="false"
+        android:onClick="CAMBIOCHECK"
+        android:button="@drawable/checbox_background"
+        android:paddingLeft="7dp"
+        android:paddingRight="15dp"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_toStartOf="@+id/checkINCORRECTO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="DESEMPEÑO"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinCORRECION"
+        android:background="@android:color/transparent"
+        android:overlapAnchor="false"
+        android:layout_alignTop="@+id/spinDESMP"
+        android:layout_toRightOf="@+id/spinDESMP"
+        android:layout_toStartOf="@+id/textView4"
+        android:visibility="invisible"
+        android:layout_alignRight="@+id/vsAPELLIDO1"
+        android:layout_alignEnd="@+id/vsAPELLIDO1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editOBSERVACION"
+        android:layout_alignRight="@+id/editOTROS_inspeccionvs"
+        android:layout_alignEnd="@+id/editOTROS_inspeccionvs"
+        android:hint="OBSERVACIONES"
+        android:singleLine="true"
+        android:layout_toEndOf="@+id/vsAPELLIDO1"
+        android:layout_alignTop="@+id/spinCORRECION"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray"
+        android:paddingLeft="5dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_orange_light"
+        android:layout_alignStart="@+id/spinCORREAJES"
+        android:layout_alignBottom="@+id/ver_VS_DESEMP"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkINCORRECTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkCORRECTO"
+        android:layout_alignBottom="@+id/checkCORRECTO"
+        android:layout_alignEnd="@+id/spinCAZADORA"
+        android:button="@drawable/checbox_background"
+        android:checked="true"
+        android:onClick="CAMBIOCHECK1"
+        android:paddingLeft="7dp"
+        android:text="CORRECTO NO" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="INSPECCION MANUAL"
+        android:id="@+id/textView21"
+        android:layout_above="@+id/spinDESMP"
+        android:layout_toRightOf="@+id/spinDESMP"
+        android:layout_toEndOf="@+id/spinDESMP" />
+
+    <Button
+        android:id="@+id/btGUARDAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/checkCORRECTO"
+        android:layout_below="@+id/checkINCORRECTO"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boton_redondo"
+        android:onClick="guardar"
+        android:text="GUARDAR"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIP EN VIGOR"
+        android:id="@+id/checkTIPVIGOR"
+        android:checked="true"
+
+        android:onClick="ORDENESPUESTO"
+        android:button="@drawable/checbox_background"
+        android:layout_below="@+id/ver_VS_CORRECCIONES"
+        android:layout_toRightOf="@+id/spinDESMP"
+        android:layout_alignRight="@+id/textView21"
+        android:layout_alignEnd="@+id/textView21"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="NOMBRE"
+        android:id="@+id/textView22"
+        android:layout_above="@+id/s_TIP"
+        android:layout_toLeftOf="@+id/editHORA"
+        android:layout_toStartOf="@+id/editHORA" />
+
+    <TextView
+        android:id="@+id/VS_PANEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignTop="@+id/imageButton12"
+        android:background="@drawable/boton_redondo_amarillo"
+        android:gravity="center"
+        android:text="REGISTRO: 0/0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff000000" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton12"
+        android:src="@android:drawable/ic_media_previous"
+        android:layout_toLeftOf="@+id/imageButton13"
+        android:visibility="invisible"
+        android:onClick="VS_PRIMER"
+        android:background="@drawable/boton_redondo_gris"
+        android:layout_below="@+id/btGUARDAR"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_marginLeft="10dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton12"
+        android:layout_toStartOf="@+id/VS_INSPECCIONADO"
+        android:background="@drawable/boton_redondo_gris"
+        android:onClick="VS_ANTERIOR"
+        android:src="@android:drawable/ic_media_rew"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton15"
+        android:src="@android:drawable/ic_media_ff"
+        android:layout_alignLeft="@+id/VSnombre"
+        android:layout_alignStart="@+id/VSnombre"
+        android:visibility="invisible"
+        android:onClick="VS_SIGUIENTE"
+        android:layout_alignTop="@+id/imageButton13"
+        android:layout_toLeftOf="@+id/Spuesto"
+        android:layout_toStartOf="@+id/Spuesto"
+        android:background="@drawable/boton_redondo_gris"
+        android:layout_marginLeft="5dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton16"
+        android:src="@android:drawable/ic_media_next"
+        android:layout_alignTop="@+id/imageButton15"
+        android:visibility="invisible"
+        android:onClick="VS_ULTIMO"
+        android:layout_toRightOf="@+id/imageButton15"
+        android:layout_toStartOf="@+id/checkCORRECTO"
+        android:layout_alignRight="@+id/ver_VS_PANTALON"
+        android:layout_alignEnd="@+id/ver_VS_PANTALON"
+        android:background="@drawable/boton_redondo_gris"
+        android:layout_marginLeft="5dp" />
+
+    <Button
+        android:id="@+id/VS_VER_REGISTROS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton16"
+        android:layout_alignEnd="@+id/autoComplete_observaciones"
+        android:layout_alignStart="@+id/btGUARDAR"
+        android:layout_below="@+id/btGUARDAR"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:onClick="VER_REGISTROS"
+        android:text="VER REGISTROS"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/S_INSPECTOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/ver_VS_ABRIGO"
+        android:layout_below="@+id/textView2"
+        android:background="#9eff3932"
+        android:gravity="center"
+        android:textColorLink="@android:color/holo_purple"
+        android:textIsSelectable="false"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_NOMBREPUESTO"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/Spuesto"
+        android:layout_alignStart="@+id/Spuesto"
+        android:layout_alignRight="@+id/vsAPELLIDO2"
+        android:layout_alignEnd="@+id/vsAPELLIDO2"
+        android:layout_above="@+id/textView3"
+        android:background="#9eff3932"
+        android:visibility="invisible"
+        android:layout_margin="2dp"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_VIGILANTE"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/VSdni"
+        android:layout_toStartOf="@+id/VSdni"
+        android:layout_above="@+id/textView12"
+        android:background="#ff9fa3ff"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_margin="2dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_ZAPATOS"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textPANTALON"
+        android:layout_alignBottom="@+id/spinZAPATOS1"
+        android:background="#ffd1fff6"
+        android:visibility="invisible"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_PANTALON"
+        android:layout_below="@+id/textPANTALON"
+        android:layout_toRightOf="@+id/spinZAPATOS1"
+        android:layout_above="@+id/textABRIGO"
+        android:background="#ffd1fff6"
+        android:visibility="invisible"
+        android:layout_toStartOf="@+id/spinCAZADORA"
+        android:layout_marginLeft="2dp"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_CAZADORA"
+        android:layout_below="@+id/textCAZADORA"
+        android:layout_alignRight="@+id/spinCAZADORA"
+        android:layout_alignEnd="@+id/spinCAZADORA"
+        android:layout_above="@+id/textView15"
+        android:background="#ffd1fff6"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/VSnombre"
+        android:layout_marginLeft="2dp"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_CAMISA"
+        android:layout_below="@+id/textCAMISA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/ver_VS_ABRIGO"
+        android:layout_above="@+id/textView13"
+        android:visibility="invisible"
+        android:background="#ffd1fff6"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_ABRIGO"
+        android:layout_below="@+id/textABRIGO"
+        android:layout_above="@+id/textView13"
+        android:background="#ffd1fff6"
+        android:visibility="invisible"
+        android:layout_marginLeft="2dp"
+        android:layout_alignStart="@+id/ver_VS_PANTALON"
+        android:layout_toStartOf="@+id/spinCAZADORA"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_EPIS"
+        android:layout_alignBottom="@+id/spinABRIGO"
+        android:layout_alignRight="@+id/editOBSERVACION"
+        android:layout_alignEnd="@+id/editOBSERVACION"
+        android:layout_below="@+id/textView15"
+        android:background="#ffd1fff6"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_alignStart="@+id/ver_VS_CAZADORA"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_DEFENSA"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinGRILLETES"
+        android:layout_above="@+id/textView14"
+        android:background="#ffffbd19"
+        android:visibility="invisible"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignEnd="@+id/ver_VS_VIGILANTE"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_GRILLETES"
+        android:layout_above="@+id/textView14"
+        android:background="#ffffbd19"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/ver_VS_CORREAJES"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_alignStart="@+id/editHORA"
+        android:layout_below="@+id/textView18"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_CORREAJES"
+        android:visibility="invisible"
+        android:background="#ffffbd19"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignBottom="@+id/ver_VS_GRILLETES"
+        android:layout_alignTop="@+id/ver_VS_DEFENSA"
+        android:layout_alignStart="@+id/imageButton16"
+        android:layout_alignEnd="@+id/list_Inspeccion_manual"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_DESEMP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/spinCORRECION"
+        android:layout_below="@+id/textView20"
+        android:layout_alignBottom="@+id/spinDESMP"
+        android:visibility="invisible"
+        android:background="#fffc06ff"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignEnd="@+id/spinCAMISA"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ver_VS_CORRECCIONES"
+        android:layout_alignBottom="@+id/spinCORRECION"
+        android:layout_alignLeft="@+id/spinCORRECION"
+        android:layout_alignStart="@+id/spinCORRECION"
+        android:layout_toStartOf="@+id/textView4"
+        android:layout_alignTop="@+id/spinCORRECION"
+        android:background="#fffc06ff"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/textView4" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_Inspeccion_manual"
+        android:layout_below="@+id/textView21"
+        android:layout_alignLeft="@+id/spinCORRECION"
+        android:layout_alignStart="@+id/spinCORRECION"
+        android:layout_toStartOf="@+id/checkTIPVIGOR"
+        android:layout_above="@+id/checkTIPVIGOR"
+        android:choiceMode="singleChoice"
+        android:layout_alignRight="@+id/spinCORREAJES"
+        android:layout_alignEnd="@+id/spinCORREAJES"
+        android:visibility="invisible"
+        android:paddingLeft="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="CORREAJES"
+        android:id="@+id/textView94"
+        android:layout_above="@+id/spinGRILLETES"
+        android:layout_toRightOf="@+id/ver_VS_GRILLETES"
+        android:layout_toEndOf="@+id/ver_VS_GRILLETES"
+        android:layout_alignTop="@+id/textView19" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICADO D&quot;"
+        android:button="@drawable/checbox_background"
+        android:id="@+id/checkBox"
+        android:layout_alignLeft="@+id/imageButton15"
+        android:layout_alignStart="@+id/imageButton15"
+        android:checked="false"
+        android:paddingLeft="7dp"
+        android:layout_alignTop="@+id/checkORDENES"
+        android:layout_marginTop="3dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkTIPVIGOR"
+        android:layout_alignEnd="@+id/spinGRILLETES"
+        android:layout_below="@+id/textView21"
+        android:layout_toEndOf="@+id/ver_VS_CAMISA"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableLeft="@android:drawable/btn_star_big_on"
+        android:drawablePadding="8dp"
+        android:onClick="INSPECCIONES_MANUALES"
+        android:text="INSPECCIONES MANUALES"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="(VS YA INSPECCIONADO ESTE MES)"
+        android:id="@+id/VS_INSPECCIONADO"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_alignLeft="@+id/editFECHA"
+        android:layout_alignStart="@+id/editFECHA"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoComplete_observaciones"
+        android:layout_alignTop="@+id/spinCORRECION"
+        android:layout_alignBottom="@+id/editOBSERVACION"
+        android:layout_alignEnd="@+id/ver_VS_NOMBREPUESTO"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_orange_light"
+        android:hint="Observaciones"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="8dp"
+        android:layout_toEndOf="@+id/button19"
+        android:layout_marginLeft="5dp"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:textStyle="italic"
+        android:maxLength="95"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_toEndOf="@+id/ver_VS_DESEMP"
+        android:layout_toStartOf="@+id/ver_VS_NOMBREPUESTO"
+        android:onClick="INSPECCIONES_MANUALES"
+        android:text="INSPECCIONES MANUALES" />
+
+</RelativeLayout>

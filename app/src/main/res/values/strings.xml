@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">INSPECTOR</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="OK">ACEPTAR</string>
+    <string name="CONTINUAR">CONTINUAR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_inspecciones_vs">INSPECCIONES DE VS</string>
+    <string name="title_activity_inspeccion_puesto">INSPECCION DE PUESTO</string>
+    <string name="title_activity_configuracion">CONFIGURACION</string>
+    <string name="title_activity_principal">PRINCIPAL</string>
+    <string name="title_activity_exportar">EXPORTAR</string>
+    <string name="title_activity_ensayo">ENSAYO</string>
+    <string name="title_activity_info">INFO</string>
+    <string name="title_activity_fichas_personal">Fichas del Personal</string>
+    <string name="title_activity_vacaciones">VACACIONES</string>
+    <string name="title_activity_rop">ROPA</string>
+    <string name="title_activity_calibrado__adm">CALIBRADO ADM</string>
+    <string name="title_activity_inspecciones_manuales">INSPECCIONES MANUALES</string>
+    <string name="title_activity_firmas">firmas</string>
+    <string name="title_activity_menu__test">FORMACION</string>
+    <string name="title_activity_test">TEST</string>
+    <string name="icon">icon</string>
+    <string name="title_activity_listado_ordenes">listado_ordenes</string>
+    <string name="prompt">Seleccione un valor</string>
+    <string name="ALERTA_TEST"><![CDATA[QUIERE REPETIR <b>EL TEST DE</b>]]></string>
+    <string name="infor_formacion">
+        - INFORMACION -\n\n
+        Elegir Primero VS o AUX:\n
+    1.- Selecione Formacion a realizar. \n
+    2.- Selecione el nombre de la persona que va realizar la formacion.\n
+    3.- Pulse el Boton INICIAR TEST\n\n
+        - Al selecionar Formacion aparecera el boton LEER FORMACION.\n
+        - Podra consultar un archivo PDF con la información necesaria.\n\n
+        - Una vez REALIZADO y APROBADO el TEST, Tiene que Firmar.\n
+        - Un Test esta APROBADO cuando son correctas el 70% de las respuestas.\n
+        - Puede realizar tantos test como necesite para aprobar.
+    </string>
+    <string name="Etiqueta_VS">SELECCIONE NOMBRE DE VIGILANTE:</string>
+    <string name="Etiqueta_AUX">SELECCIONE NOMBRE DE AUXILIAR:</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="INSPECTOR">INSPECTOR</string>
+    <string name="PUESTO">PUESTO</string>
+    <string name="DESPERFECTOS">DESPERFECTOS VISITA</string>
+    <string name="ELEMENTOS">ELEMENTOS AUXILIARES OBLIGATORIOS</string>
+    <string name="ADM">ADM</string>
+    <string name="MAQUINA">MAQUINA RX</string>
+    <string name="BARRERAS">BARRERAS</string>
+    <string name="TRAZAS">MAQUINA TRAZAS</string>
+    <string name="TORNOS">TORNOS</string>
+    <string name="DETECTOR">DETECTOR DE LIQUIDOS</string>
+    <string name="ZAPATOS">MAQUINA DE ZAPATOS</string>
+    <string name="FOTO">FOTOGRAFIAS</string>
+    <string name="FOTO1">FOTOGRAFIA 1</string>
+    <string name="FOTO2">FOTOGRAFIA 2</string>
+    <string name="FOTO3">FOTOGRAFIA 3</string>
+    <string name="FOTO4">FOTOGRAFIA 4</string>
+    <string name="RIESGOS">RIESGOS</string>
+    <string name="OBSERVACIONES">OBSERVACIONES</string>
+    <string name="PRIMERO">PRIMERO</string>
+    <string name="ULTIMO">ULTIMO</string>
+    <string name="ANTER">ANTERIOR</string>
+    <string name="SIGUIENTE">SIGUIENTE</string>
+    <string name="GUARDAR">GUARDAR</string>
+    <string name="VEREGISTROS">VER REGISTROS</string>
+    <string name="PROCEDIMIENTOS">PROCEDIMIENTOS</string>
+    <string name="SALIR">SALIR</string>
+    <string name="I_FORMADORES">IMPORTAR FORMADORES</string>
+    <string name="LISTA_PUESTOS">IMPORTAR PUESTOS</string>
+    <string name="tipoensayo">TIPO DE ENSAYO</string>
+    <string name="HORAI">HORA INCIO</string>
+    <string name="HORAF">HORA FIN</string>
+
+    <string name="HFOTO">HACER FOTO</string>
+    <string name="ACTUALIZAR">ACTUALIZAR</string>
+    <string name="EDITAR">EDITAR</string>
+    <string name="NUEVO">NUEVO</string>
+    <string name="DATOSINSPECTOR">DATOS DEL INSPECTOR</string>
+    <string name="DATOSVS">DATOS DEL VIGILANTE</string>
+    <string name="PRENDASUNI">PRENDAS UNIFORME</string>
+    <string name="PANTALON">PANTALON</string>
+    <string name="CAZADORA">CAZADORA</string>
+    <string name="CAMISA">CAMISA</string>
+    <string name="ABRIGO">ABRIGO</string>
+    <string name="EPIS">EPIS</string>
+    <string name="ELEMENTOSAUXILIARES">ELEMENTOS AUXILIARES DEL PUESTO</string>
+    <string name="DEFENSA">DEFENSA</string>
+    <string name="GRILLETES">GRILLETES</string>
+    <string name="CORREAJES">CORREAJES</string>
+    <string name="DESEMPEÑO">DESEMPEÑO</string>
+    <string name="INSPECCIONMANUAL">INSPECCION MANUAL</string>
+    <string name="OTROS">Otros</string>
+    <string name="ZP">ZAPATOS</string>
+    <string name="FUNCIONESPUESTO">FUNCIONES DEL PUESTO</string>
+    <string name="ORDENESFIRMADAS">Tiene Firmado las ordenes de puesto</string>
+    <string name="CORRECTOSI">CORRECTO SI</string>
+    <string name="CORRESTONO">CORRECTO NO</string>
+</resources>

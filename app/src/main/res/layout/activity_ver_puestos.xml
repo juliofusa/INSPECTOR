@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amarillo"
+    android:fadingEdge="horizontal"
+    tools:context="com.example.julio.inspector.ver_puestos">
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_VER_REGISTROS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_naranja"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_mes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button28"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:onClick="SALIR"
+        android:text="@string/SALIR"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_inspector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_inspector" />
+
+    <Spinner
+        android:id="@+id/spinner_mes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_naranja"
+        app:layout_constraintBottom_toBottomOf="@+id/s_PUESTOS_VER_REGISTROS"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_inspector"
+        app:layout_constraintStart_toEndOf="@+id/s_PUESTOS_VER_REGISTROS"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_VER_REGISTROS"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinner_inspector"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_naranja"
+        app:layout_constraintBottom_toBottomOf="@+id/s_PUESTOS_VER_REGISTROS"
+        app:layout_constraintEnd_toStartOf="@+id/button28"
+        app:layout_constraintStart_toEndOf="@+id/spinner_mes"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_VER_REGISTROS" />
+
+    <ListView
+        android:id="@+id/LISTA_DE_PUESTOS"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.90"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:backgroundTintMode="src_over"
+        android:divider="@drawable/boton_redondo_gris"
+        android:dividerHeight="20dp"
+        android:elevation="8dp"
+        android:fadeScrollbars="true"
+        android:fadingEdge="horizontal|vertical"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_VER_REGISTROS"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/otralista"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LISTA_DE_PUESTOS" />
+</android.support.constraint.ConstraintLayout>

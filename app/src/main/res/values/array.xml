@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="INSPECTORES">
+        <item></item>
+        <item>DAPENA FAILDE ,BLANCANIEVES</item>
+        <item>MONESCILLO CASTELLANOS ,AGAPITO</item>
+        <item>VITORIA PIOTE ,JOSE MANUEL</item>
+        <item>CERRADA GARCIA ,JOSE CARLOS</item>
+        <item>BLANCO CESAR ,SERGIO</item>
+        <item>ORELLANA SANTOS ,CESAR</item>
+        <item>MOYA NOVOA ,FELIX</item>
+        <item>RODRIGUEZ CACERES ,CANDIDO</item>
+        <item>PISONERO,JOSE IGNACIO</item>
+        <item>BELLO RECIO,LUIS VICENTE</item>
+        <item>AMARILLA ALBARRÁN ,JUAN JOSÉ</item>
+
+    </array>
+    <array name="AUXILIARES">
+        <item></item>
+        <item>BELMONTE ESPINOSA, ZULEMA ESTHER</item>
+        <item>CHARRY PATIÑO, MARIA CONSUELO</item>
+
+    </array>
+    <array name="INSPECTORESadm">
+        <item></item>
+        <item>AMARILLA ALBARRÁN ,JUAN JOSÉ</item>
+        <item>BARRENA ZUBIARRAIN ,MIGUEL ANGEL</item>
+        <item>BELLO RECIO,LUIS VICENTE</item>
+        <item>BLANCO MARTÍN ,EVA</item>
+        <item>BUENO LIÉBANA ,JUAN ANTONIO</item>
+        <item>CATALÁN PARREÑO ,ENRIQUE RAMON</item>
+        <item>CANO MONZON,MIGUEL ANGUEL</item>
+        <item>CEDRUN CABRILLO ,PEDRO NEMESIO</item>
+        <item>DAPENA FAILDE ,BLANCANIEVES</item>
+        <item>FARIÑA FERNANDEZ ,PEDRO</item>
+        <item>GARCIA ESQUINAS ,LUCIA</item>
+        <item>ILLESCAS LAGARTERA ,CESAR</item>
+        <item>MATEU ARRIBAS ,PEDRO</item>
+        <item>MONESCILLO CASTELLANOS ,AGAPITO</item>
+        <item>ORMEÑO MARTIN ,IRENE</item>
+        <item>ORDOÑEZ LÓPEZ ,MARIA DOLORES</item>
+        <item>PISONERO,JOSE IGNACIO</item>
+        <item>RAMIREZ MUÑOZ ,ANGEL LUIS</item>
+        <item>RUIZ MUÑOZ ,MIGUEL</item>
+        <item>RUIZ SANCHEZ ,JOSE</item>
+        <item>SAEZ GUTIERREZ ,LUIS</item>
+        <item>SANCHEZ CIRUELO ,BENEDICTO</item>
+        <item>SOBRINO DELGADO ,FRANCISCO JAVIER</item>
+        <item>TRUEBA MORALES ,ANDRES ALVARO</item>
+        <item>VITORIA PIOTE ,JOSE MANUEL</item>
+        <item>CERRADA GARCIA ,JOSE CARLOS</item>
+        <item>BLANCO CESAR ,SERGIO</item>
+        <item>ORELLANA SANTOS ,CESAR</item>
+        <item>MOYA NOVOA ,FELIX</item>
+        <item>RODRIGUEZ CACERES ,CANDIDO</item>
+        <item>RODRIGUEZ CACERES ,RAFAEL</item>
+    </array>
+    <array name="dni">
+        <item></item>
+        <item>76748140S</item>
+        <item>5900643Q</item>
+        <item>50988705M</item>
+        <item>1832463F</item>
+        <item>53047519C</item>
+        <item>51333763V</item>
+        <item>2504402R</item>
+        <item>2858827L</item>
+        <item>2870388B</item>
+            </array>
+    <array name="DESPLEGABLE4">
+        <item>Correcto</item>
+        <item>Falla en procedimientos, se corrige</item>
+        <item>Desconoce procedimiento, se forma</item>
+        <item>Incorrecto</item>
+            </array>
+    <array name="Dni">
+        <item>1345789Y</item>
+        <item>1420000P</item>
+        <item>4562000L</item>
+        <item>7895122Z</item>
+    </array>
+    <array name="NOMBRE">
+    <item>JUAN</item>
+    <item>MANUEL</item>
+    <item>PEDRO</item>
+    <item>MARIA</item>
+</array>
+    <array name="FILTROSADM">
+
+        <item>ALAMAN</item>
+
+    </array>
+    <array name="APELLIDO2">
+        <item>JIMENEZ</item>
+        <item>SOTO</item>
+        <item>CAMINERO</item>
+        <item>GOMEZ</item>
+    </array>
+
+    <array name="TEST_VS">
+        <item></item>
+        <item>INSPECCIONES MANUALES</item>
+
+        <item>INSPECCIONES CARRITOS LIMPIEZA</item>
+        <item>UTILIZACION EQUIPOS ETD</item>
+
+        <item>ARTEFACTOS EXPLOSIVOS LAMINADOS</item>
+        <item>SUMINISTROS AEROPUERTO</item>
+
+    </array>
+
+    <array name="TEST_AUX">
+        <item></item>
+        <item>REGISTRO DE SEGURIDAD EN AERONAVES</item>
+        <item>REGISTRO DE SEGURIDAD EN BOEING 787-900</item>
+        <item>REGISTRO DE SEGURIDAD EN BOEING 767-300</item>
+    </array>
+
+    <array name="puestos1">
+        <item></item>
+        <item>Acceso Central (Inspección empleados y vehículos)</item>
+        <item>Acceso Este (antiguo Iberswiss)</item>
+        <item>Acceso Norte (CLH)</item>
+        <item>Acceso Porton APM</item>
+        <item>Acceso Sur (antiguo Modular)</item>
+        <item>Acceso Túnel Cela</item>
+        <item>Analista T1-2-3</item>
+        <item>Analista T4</item>
+        <item>Central Eléctrica CELT</item>
+        <item>CLASA. Acceso Norte</item>
+        <item>CLASA. Acceso Sur</item>
+        <item>Dique Sur Planta 1*</item>
+        <item>Edificio CLASA</item>
+        <item>Empleados T 2</item>
+        <item>Estacionamiento Norte</item>
+        <item>Incidencias CI (CGA)</item>
+        <item>Incidencias CTX</item>
+        <item>Inspección Neptuno</item>
+        <item>Filtro Vip T4</item>
+        <item>Filtro Empleados T4 P0</item>
+        <item>Filto Vuelos Regionales T3</item>
+        <item>Parking VIP</item>
+        <item>Patrulla APM</item>
+        <item>Patrulla Gorrillas</item>
+        <item>Patrullas</item>
+        <item>Patrullas Exteriores</item>
+        <item>Patrullas Indigentes T1-2-3</item>
+        <item>Patrullas Indigentes T4</item>
+        <item>Patrullas Patio Carrillos</item>
+        <item>Patrullas Perimetrales</item>
+        <item>Patrullas T1-2-3 ZP</item>
+        <item>Patrullas T1-2-3 ZRS</item>
+        <item>Patrullas T4 ZP</item>
+        <item>Patrullas T4 ZRS</item>
+        <item>Patrullas T4S</item>
+        <item>Patrullas TWR Norte+T4S</item>
+        <item>Perimetral Norte</item>
+        <item>Puente Aéreo</item>
+        <item>Plan Barajas</item>
+        <item>Reinspección T1-2-3</item>
+        <item>Reinspección T4</item>
+        <item>Rx convencionales integradas T1-2-3</item>
+        <item>Rx convencionales integradas T4</item>
+        <item>SATE</item>
+        <item>T1 Planta 2 *</item>
+        <item>T1 Sala 1</item>
+        <item>T4-1 Norte *</item>
+        <item>T4-1 Sur*</item>
+        <item>Torre Norte</item>
+        <item>Vehículos Sur</item>
+    </array>
+    <array name="puestos">
+        <item></item>
+
+        <item>Acceso Central (antiguo Alaman)</item>
+        <item>Acceso Este (antiguo Iberswiss)</item>
+        <item>Acceso Norte (CLH)</item>
+        <item>Acceso Sur (antiguo Modular)</item>
+        <item>Central Eléctrica CELT</item>
+        <item>CLASA. Acceso Norte</item>
+        <item>CLASA. Acceso Sur</item>
+        <item>Dique Sur Planta 1*</item>
+        <item>Edificio CLASA</item>
+        <item>Estacionamiento Norte</item>
+        <item>Filtro Empleados T2</item>
+        <item>Filtro Vip T4</item>
+        <item>Filtro Empleados T4 P0</item>
+        <item>Filtro Empleados T4 P1</item>
+        <item>Filtro T3</item>
+        <item>Parking VIP</item>
+        <item>APM</item>
+        <item>Patrulla Perimetral</item>
+        <item>Plan Barajas</item>
+        <item>Patrulla Viales Exteriores</item>
+        <item>Puente Aéreo</item>
+        <item>SATE</item>
+        <item>Filtro Mercancias T4 Sur</item>
+        <item>Filtro Mercancias T4 Norte</item>
+        <item>Torre Norte</item>
+        <item>Filtro Vehículos Norte</item>
+        <item>PATRULLAS AEROPUERTO</item>
+    </array>
+    <array name="DESPLEGABLE3">
+        <item>Correcto</item>
+        <item>No corresponde Uniforme</item>
+        <item>Deteriorado</item>
+        <item>No tiene o no porta</item>
+            </array>
+    <array name="DESPLEGABLE5">
+        <item>Funcionamiento Correcto</item>
+        <item>Fallo Mantenimiento</item>
+        <item>Fallo Estético</item>
+        <item>Funcionamiento Incorrecto</item>
+        <item>No Existe</item>
+    </array>
+    <array name="ENSAYOS">
+        <item></item>
+        <item>MAQUINA RX</item>
+        <item>ADM</item>
+        <item>BULTO ABANDONADO</item>
+        <item>ACCESO NO PERMITIDO ZONA CONTROLADA</item>
+        <item>CONTROL VEHICULOS</item>
+    </array>
+    <array name="RESULTADO">
+        <item>BIEN</item>
+        <item>MAL</item>
+        <item>NULO</item>
+    </array>
+    <string-array name="ANORAK">
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>62</item>
+        <item>64</item>
+        <item>66</item>
+        <item>68</item>
+        <item>70</item>
+        <item>72</item>
+        <item>74</item>
+    </string-array>
+    <string-array name="BOTAS">
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+
+    </string-array>
+    <string-array name="ZAPATOS">
+
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+    </string-array>
+    <string-array name="CAZADORA">
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>62</item>
+        <item>64</item>
+        <item>66</item>
+        <item>68</item>
+        <item>70</item>
+        <item>72</item>
+        <item>74</item>
+    </string-array>
+    <string-array name="CAMISA">
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>62</item>
+        <item>64</item>
+        <item>66</item>
+        <item>68</item>
+        <item>70</item>
+        <item>72</item>
+        <item>74</item>
+    </string-array>
+    <string-array name="PANTALON">
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>62</item>
+        <item>64</item>
+        <item>66</item>
+        <item>68</item>
+        <item>70</item>
+        <item>72</item>
+        <item>74</item>
+    </string-array>
+    <string-array name="TRAJEFRIO">
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>62</item>
+        <item>64</item>
+
+    </string-array>
+    <string-array name="IDPRODUCTO">
+        <item></item>
+        <item>5040</item>
+        <item>5042</item>
+        <item>5044</item>
+        <item>5046</item>
+        <item>5048</item>
+        <item>5050</item>
+        <item>5052</item>
+        <item>5054</item>
+        <item>5056</item>
+        <item>5058</item>
+        <item>5060</item>
+        <item>5062</item>
+        <item>5064</item>
+        <item>5066</item>
+        <item>5068</item>
+        <item>5070</item>
+        <item>5072</item>
+        <item>5074</item>
+        <item>8035</item>
+        <item>8036</item>
+        <item>8037</item>
+        <item>8038</item>
+        <item>8039</item>
+        <item>8040</item>
+        <item>8041</item>
+        <item>8042</item>
+        <item>8043</item>
+        <item>8044</item>
+        <item>8045</item>
+        <item>8046</item>
+        <item>10001</item>
+        <item>2034</item>
+        <item>2036</item>
+        <item>2038</item>
+        <item>2040</item>
+        <item>2042</item>
+        <item>2044</item>
+        <item>2046</item>
+        <item>2048</item>
+        <item>2050</item>
+        <item>2052</item>
+        <item>2054</item>
+        <item>2056</item>
+        <item>2058</item>
+        <item>2060</item>
+        <item>2062</item>
+        <item>2064</item>
+        <item>2066</item>
+        <item>2068</item>
+        <item>2070</item>
+        <item>2072</item>
+        <item>2074</item>
+        <item>1034</item>
+        <item>1036</item>
+        <item>1038</item>
+        <item>1040</item>
+        <item>1042</item>
+        <item>1044</item>
+        <item>1046</item>
+        <item>1048</item>
+        <item>1050</item>
+        <item>1052</item>
+        <item>1054</item>
+        <item>1056</item>
+        <item>1058</item>
+        <item>1060</item>
+        <item>1062</item>
+        <item>1064</item>
+        <item>1066</item>
+        <item>1068</item>
+        <item>1070</item>
+        <item>1072</item>
+        <item>1074</item>
+        <item>4034</item>
+        <item>4036</item>
+        <item>4038</item>
+        <item>4040</item>
+        <item>4042</item>
+        <item>4044</item>
+        <item>4046</item>
+        <item>4048</item>
+        <item>4050</item>
+        <item>4052</item>
+        <item>4054</item>
+        <item>4056</item>
+        <item>4058</item>
+        <item>4060</item>
+        <item>4062</item>
+        <item>4064</item>
+        <item>4066</item>
+        <item>4068</item>
+        <item>4070</item>
+        <item>4072</item>
+        <item>4074</item>
+        <item>10002</item>
+        <item>10003</item>
+        <item>7034</item>
+        <item>7036</item>
+        <item>7038</item>
+        <item>7040</item>
+        <item>7042</item>
+        <item>7044</item>
+        <item>7046</item>
+        <item>7048</item>
+        <item>7050</item>
+        <item>7052</item>
+        <item>7054</item>
+        <item>7056</item>
+        <item>7058</item>
+        <item>7060</item>
+        <item>7062</item>
+        <item>7064</item>
+        <item>7066</item>
+        <item>7068</item>
+        <item>7070</item>
+        <item>7072</item>
+        <item>7074</item>
+        <item>3034</item>
+        <item>3036</item>
+        <item>3038</item>
+        <item>3040</item>
+        <item>3042</item>
+        <item>3044</item>
+        <item>3046</item>
+        <item>3048</item>
+        <item>3050</item>
+        <item>3052</item>
+        <item>3054</item>
+        <item>3056</item>
+        <item>3058</item>
+        <item>3060</item>
+        <item>3062</item>
+        <item>3064</item>
+        <item>3066</item>
+        <item>3068</item>
+        <item>3070</item>
+        <item>3072</item>
+        <item>3074</item>
+        <item>9034</item>
+        <item>9036</item>
+        <item>9038</item>
+        <item>9040</item>
+        <item>9042</item>
+        <item>9044</item>
+        <item>9046</item>
+        <item>9048</item>
+        <item>9050</item>
+        <item>9052</item>
+        <item>9054</item>
+        <item>9056</item>
+        <item>9058</item>
+        <item>9060</item>
+        <item>9062</item>
+        <item>9064</item>
+        <item>6036</item>
+        <item>6037</item>
+        <item>6038</item>
+        <item>6039</item>
+        <item>6040</item>
+        <item>6041</item>
+        <item>6042</item>
+        <item>6043</item>
+        <item>6044</item>
+        <item>6045</item>
+        <item>6046</item>
+        <item>10004</item>
+        <item>10005</item>
+        <item>2134</item>
+        <item>2136</item>
+        <item>2138</item>
+        <item>2140</item>
+        <item>2142</item>
+        <item>2144</item>
+        <item>2146</item>
+        <item>2148</item>
+        <item>2150</item>
+        <item>2152</item>
+        <item>2154</item>
+        <item>2156</item>
+        <item>2158</item>
+        <item>2160</item>
+        <item>2162</item>
+        <item>2164</item>
+        <item>2166</item>
+        <item>2168</item>
+        <item>2170</item>
+        <item>2172</item>
+        <item>2174</item>
+        <item>2234</item>
+        <item>2236</item>
+        <item>2238</item>
+        <item>2240</item>
+        <item>2242</item>
+        <item>2244</item>
+        <item>2246</item>
+        <item>2248</item>
+        <item>2250</item>
+        <item>2252</item>
+        <item>2254</item>
+        <item>2256</item>
+        <item>2258</item>
+        <item>2260</item>
+        <item>2262</item>
+        <item>2264</item>
+        <item>2266</item>
+        <item>2268</item>
+        <item>2270</item>
+        <item>2272</item>
+        <item>2274</item>
+    </string-array>
+    <array name="DESCRIPCION">
+        <item></item>
+        <item>ANORAK TALLA 40</item>
+        <item>ANORAK TALLA 42</item>
+        <item>ANORAK TALLA 44</item>
+        <item>ANORAK TALLA 46</item>
+        <item>ANORAK TALLA 48</item>
+        <item>ANORAK TALLA 50</item>
+        <item>ANORAK TALLA 52</item>
+        <item>ANORAK TALLA 54</item>
+        <item>ANORAK TALLA 56</item>
+        <item>ANORAK TALLA 58</item>
+        <item>ANORAK TALLA 60</item>
+        <item>ANORAK TALLA 62</item>
+        <item>ANORAK TALLA 64</item>
+        <item>ANORAK TALLA 66</item>
+        <item>ANORAK TALLA 68</item>
+        <item>ANORAK TALLA 70</item>
+        <item>ANORAK TALLA 72</item>
+        <item>ANORAK TALLA 74</item>
+        <item>BOTAS TALLA 35</item>
+        <item>BOTAS TALLA 35</item>
+        <item>BOTAS TALLA 36</item>
+        <item>BOTAS TALLA 37</item>
+        <item>BOTAS TALLA 38</item>
+        <item>BOTAS TALLA 39</item>
+        <item>BOTAS TALLA 40</item>
+        <item>BOTAS TALLA 42</item>
+        <item>BOTAS TALLA 43</item>
+        <item>BOTAS TALLA 44</item>
+        <item>BOTAS TALLA 45</item>
+        <item>BOTAS TALLA 46</item>
+        <item>BRAZALETE</item>
+        <item>CAMISA INVIERNO TALLA 34</item>
+        <item>CAMISA INVIERNO TALLA 36</item>
+        <item>CAMISA INVIERNO TALLA 38</item>
+        <item>CAMISA INVIERNO TALLA 40</item>
+        <item>CAMISA INVIERNO TALLA 42</item>
+        <item>CAMISA INVIERNO TALLA 44</item>
+        <item>CAMISA INVIERNO TALLA 46</item>
+        <item>CAMISA INVIERNO TALLA 48</item>
+        <item>CAMISA INVIERNO TALLA 50</item>
+        <item>CAMISA INVIERNO TALLA 52</item>
+        <item>CAMISA INVIERNO TALLA 54</item>
+        <item>CAMISA INVIERNO TALLA 56</item>
+        <item>CAMISA INVIERNO TALLA 58</item>
+        <item>CAMISA INVIERNO TALLA 60</item>
+        <item>CAMISA INVIERNO TALLA 62</item>
+        <item>CAMISA INVIERNO TALLA 64</item>
+        <item>CAMISA INVIERNO TALLA 66</item>
+        <item>CAMISA INVIERNO TALLA 68</item>
+        <item>CAMISA INVIERNO TALLA 70</item>
+        <item>CAMISA INVIERNO TALLA 72</item>
+        <item>CAMISA INVIERNO TALLA 74</item>
+        <item>CAMISA VERANO TALLA 34</item>
+        <item>CAMISA VERANO TALLA 36</item>
+        <item>CAMISA VERANO TALLA 38</item>
+        <item>CAMISA VERANO TALLA 40</item>
+        <item>CAMISA VERANO TALLA 42</item>
+        <item>CAMISA VERANO TALLA 44</item>
+        <item>CAMISA VERANO TALLA 46</item>
+        <item>CAMISA VERANO TALLA 48</item>
+        <item>CAMISA VERANO TALLA 50</item>
+        <item>CAMISA VERANO TALLA 52</item>
+        <item>CAMISA VERANO TALLA 54</item>
+        <item>CAMISA VERANO TALLA 56</item>
+        <item>CAMISA VERANO TALLA 58</item>
+        <item>CAMISA VERANO TALLA 60</item>
+        <item>CAMISA VERANO TALLA 62</item>
+        <item>CAMISA VERANO TALLA 64</item>
+        <item>CAMISA VERANO TALLA 66</item>
+        <item>CAMISA VERANO TALLA 68</item>
+        <item>CAMISA VERANO TALLA 70</item>
+        <item>CAMISA VERANO TALLA 72</item>
+        <item>CAMISA VERANO TALLA 74</item>
+        <item>CAZADORA TALLA 34</item>
+        <item>CAZADORA TALLA 36</item>
+        <item>CAZADORA TALLA 38</item>
+        <item>CAZADORA TALLA 40</item>
+        <item>CAZADORA TALLA 42</item>
+        <item>CAZADORA TALLA 44</item>
+        <item>CAZADORA TALLA 46</item>
+        <item>CAZADORA TALLA 48</item>
+        <item>CAZADORA TALLA 50</item>
+        <item>CAZADORA TALLA 52</item>
+        <item>CAZADORA TALLA 54</item>
+        <item>CAZADORA TALLA 56</item>
+        <item>CAZADORA TALLA 58</item>
+        <item>CAZADORA TALLA 60</item>
+        <item>CAZADORA TALLA 62</item>
+        <item>CAZADORA TALLA 64</item>
+        <item>CAZADORA TALLA 66</item>
+        <item>CAZADORA TALLA 68</item>
+        <item>CAZADORA TALLA 70</item>
+        <item>CAZADORA TALLA 72</item>
+        <item>CAZADORA TALLA 74</item>
+        <item>CHALECO </item>
+        <item>CORBATA </item>
+        <item>PANTALON INVIERNO TALLA 34</item>
+        <item>PANTALON INVIERNO TALLA 36</item>
+        <item>PANTALON INVIERNO TALLA 38</item>
+        <item>PANTALON INVIERNO TALLA 40</item>
+        <item>PANTALON INVIERNO TALLA 42</item>
+        <item>PANTALON INVIERNO TALLA 44</item>
+        <item>PANTALON INVIERNO TALLA 46</item>
+        <item>PANTALON INVIERNO TALLA 48</item>
+        <item>PANTALON INVIERNO TALLA 50</item>
+        <item>PANTALON INVIERNO TALLA 52</item>
+        <item>PANTALON INVIERNO TALLA 54</item>
+        <item>PANTALON INVIERNO TALLA 56</item>
+        <item>PANTALON INVIERNO TALLA 58</item>
+        <item>PANTALON INVIERNO TALLA 60</item>
+        <item>PANTALON INVIERNO TALLA 62</item>
+        <item>PANTALON INVIERNO TALLA 64</item>
+        <item>PANTALON INVIERNO TALLA 66</item>
+        <item>PANTALON INVIERNO TALLA 68</item>
+        <item>PANTALON INVIERNO TALLA 70</item>
+        <item>PANTALON INVIERNO TALLA 72</item>
+        <item>PANTALON INVIERNO TALLA 74</item>
+        <item>PANTALON VERANO TALLA 34</item>
+        <item>PANTALON VERANO TALLA 36</item>
+        <item>PANTALON VERANO TALLA 38</item>
+        <item>PANTALON VERANO TALLA 40</item>
+        <item>PANTALON VERANO TALLA 42</item>
+        <item>PANTALON VERANO TALLA 44</item>
+        <item>PANTALON VERANO TALLA 46</item>
+        <item>PANTALON VERANO TALLA 48</item>
+        <item>PANTALON VERANO TALLA 50</item>
+        <item>PANTALON VERANO TALLA 52</item>
+        <item>PANTALON VERANO TALLA 54</item>
+        <item>PANTALON VERANO TALLA 56</item>
+        <item>PANTALON VERANO TALLA 58</item>
+        <item>PANTALON VERANO TALLA 60</item>
+        <item>PANTALON VERANO TALLA 62</item>
+        <item>PANTALON VERANO TALLA 64</item>
+        <item>PANTALON VERANO TALLA 66</item>
+        <item>PANTALON VERANO TALLA 68</item>
+        <item>PANTALON VERANO TALLA 70</item>
+        <item>PANTALON VERANO TALLA 72</item>
+        <item>PANTALON VERANO TALLA 74</item>
+        <item>TRAJE FRIO 34</item>
+        <item>TRAJE FRIO 36</item>
+        <item>TRAJE FRIO 38</item>
+        <item>TRAJE FRIO 40</item>
+        <item>TRAJE FRIO 42</item>
+        <item>TRAJE FRIO 44</item>
+        <item>TRAJE FRIO 46</item>
+        <item>TRAJE FRIO 48</item>
+        <item>TRAJE FRIO 50</item>
+        <item>TRAJE FRIO 52</item>
+        <item>TRAJE FRIO 54</item>
+        <item>TRAJE FRIO 56</item>
+        <item>TRAJE FRIO 58</item>
+        <item>TRAJE FRIO 60</item>
+        <item>TRAJE FRIO 62</item>
+        <item>TRAJE FRIO 64</item>
+        <item>ZAPATOS TALLA 36</item>
+        <item>ZAPATOS TALLA 37</item>
+        <item>ZAPATOS TALLA 38</item>
+        <item>ZAPATOS TALLA 39</item>
+        <item>ZAPATOS TALLA 40</item>
+        <item>ZAPATOS TALLA 41</item>
+        <item>ZAPATOS TALLA 42</item>
+        <item>ZAPATOS TALLA 43</item>
+        <item>ZAPATOS TALLA 44</item>
+        <item>ZAPATOS TALLA 45</item>
+        <item>ZAPATOS TALLA 46</item>
+        <item>CINTURON</item>
+        <item>DEFENSA</item>
+        <item>POLO VERANO HOMBRE TALLA 34</item>
+        <item>POLO VERANO HOMBRE TALLA 36</item>
+        <item>POLO VERANO HOMBRE TALLA 38</item>
+        <item>POLO VERANO HOMBRE TALLA 40</item>
+        <item>POLO VERANO HOMBRE TALLA 42</item>
+        <item>POLO VERANO HOMBRE TALLA 44</item>
+        <item>POLO VERANO HOMBRE TALLA 46</item>
+        <item>POLO VERANO HOMBRE TALLA 48</item>
+        <item>POLO VERANO HOMBRE TALLA 50</item>
+        <item>POLO VERANO HOMBRE TALLA 52</item>
+        <item>POLO VERANO HOMBRE TALLA 54</item>
+        <item>POLO VERANO HOMBRE TALLA 56</item>
+        <item>POLO VERANO HOMBRE TALLA 58</item>
+        <item>POLO VERANO HOMBRE TALLA 60</item>
+        <item>POLO VERANO HOMBRE TALLA 62</item>
+        <item>POLO VERANO HOMBRE TALLA 64</item>
+        <item>POLO VERANO HOMBRE TALLA 66</item>
+        <item>POLO VERANO HOMBRE TALLA 68</item>
+        <item>POLO VERANO HOMBRE TALLA 70</item>
+        <item>POLO VERANO HOMBRE TALLA 72</item>
+        <item>POLO VERANO HOMBRE TALLA 74</item>
+        <item>POLO VERANO MUJER TALLA 34</item>
+        <item>POLO VERANO MUJER TALLA 36</item>
+        <item>POLO VERANO MUJER TALLA 38</item>
+        <item>POLO VERANO MUJER TALLA 40</item>
+        <item>POLO VERANO MUJER TALLA 42</item>
+        <item>POLO VERANO MUJER TALLA 44</item>
+        <item>POLO VERANO MUJER TALLA 46</item>
+        <item>POLO VERANO MUJER TALLA 48</item>
+        <item>POLO VERANO MUJER TALLA 50</item>
+        <item>POLO VERANO MUJER TALLA 52</item>
+        <item>POLO VERANO MUJER TALLA 54</item>
+        <item>POLO VERANO MUJER TALLA 56</item>
+        <item>POLO VERANO MUJER TALLA 58</item>
+        <item>POLO VERANO MUJER TALLA 60</item>
+        <item>POLO VERANO MUJER TALLA 62</item>
+        <item>POLO VERANO MUJER TALLA 64</item>
+        <item>POLO VERANO MUJER TALLA 66</item>
+        <item>POLO VERANO MUJER TALLA 68</item>
+        <item>POLO VERANO MUJER TALLA 70</item>
+        <item>POLO VERANO MUJER TALLA 72</item>
+        <item>POLO VERANO MUJER TALLA 74</item>
+        </array>
+
+<array name="DESCRIPCION1">
+    <item></item>
+    <item>ANORAK</item>
+    <item>BOTAS</item>
+    <item>BRAZALETE</item>
+    <item>CAMISA VERANO</item>
+    <item>CAMISA INVIERNO</item>
+    <item>CHALECO</item>
+    <item>CAZADORA</item>
+
+    <item>CORBATA </item>
+    <item>CINTURON</item>
+    <item>DEFENSA</item>
+    <item>PANTALON INVIERNO</item>
+    <item>PANTALON VERANO</item>
+    <item>POLO VERANO HOMBRE</item>
+    <item>POLO VERANO MUJER</item>
+    <item>TRAJE FRIO</item>
+    <item>ZAPATOS</item>
+</array>
+    <array name="OBSERVACIONES">
+        <item>ANDEN APM</item>
+        <item>Boton desabrochado de la uniformidad</item>
+        <item>Calzado no corresponde con la uniformidad</item>
+        <item>Camisa desabrochada</item>
+        <item>Cinturilla.</item>
+        <item>CLASA</item>
+        <item>E.E. T123.</item>
+        <item>E.E. T4.</item>
+        <item>Defensa y grilletes en la mochila.</item>
+        <item>Empeine.</item>
+        <item>En la inspeccion manual no llega a la zona del empeine.</item>
+        <item>Esposas y defensa en la mochila, se le corrige.</item>
+        <item>Deterioro del vestuario.</item>
+        <item>Esta hablando por telefono todo el tiempo.</item>
+        <item>Falta inspeccion de cinturilla.</item>
+        <item>Grilletes en la mochila, se le corrige.</item>
+        <item>Hace pasar dos veces por A.D.M.</item>
+        <item>Inspeccion correcta.</item>
+        <item>Inspeccion de los vehiculos corregida, no sigue el procedimiento.</item>
+        <item>Inspeccion de vehiculo mal realizada, se le corrige.</item>
+        <item>Mal uniformado, se le corrige.</item>
+        <item>No tiene firmadas las ordenes de puesto.</item>
+        <item>No realiza la inspeccion de la cinturilla, se le corrige.</item>
+        <item>No sigue el procedimiento en el arco.</item>
+        <item>No trae defensa.</item>
+        <item>No trae el TIP.</item>
+        <item>No trae el TIP, se manda a por el.</item>
+        <item>Patrulla Clasa.</item>
+        <item>Plan Barajas.</item>
+        <item>Se le advierte por la Camisa.</item>
+        <item>Se le corrige.</item>
+        <item>Sin Defensa.</item>
+        <item>Sin Grilletes.</item>
+        <item>Sin Guantes.</item>
+        <item>Viales.</item>
+        <item>Zapatilla.</item>
+        <item>Zapatos que no corresponden con el uniforme.</item>
+    </array>
+    <array name="preguntas_imagen">
+        <item>@drawable/uno</item>
+        <item>@drawable/dos</item>
+        <item>@drawable/tres</item>
+        <item>@drawable/cuatro</item>
+        <item>@drawable/cinco</item>
+        <item>@drawable/seis</item>
+        <item>@drawable/siete</item>
+        <item>@drawable/ocho</item>
+        <item>@drawable/nueve</item>
+        <item>@drawable/diez</item>
+        <item>@drawable/once</item>
+        <item>@drawable/doce</item>
+        <item>@drawable/trece</item>
+        <item>@drawable/catorce</item>
+        <item>@drawable/quince</item>
+        <item>@drawable/dieciseis</item>
+        <item>@drawable/diecisiete</item>
+        <item>@drawable/dieciocho</item>
+        <item>@drawable/diecinueve</item>
+        <item>@drawable/veinte</item>
+        <item>@drawable/veintiuno</item>
+        <item>@drawable/veintidos</item>
+        <item>@drawable/veintitres</item>
+        <item>@drawable/veinticuatro</item>
+        <item>@drawable/veinticinco</item>
+        <item>@drawable/veintiseis</item>
+        <item>@drawable/veintisiete</item>
+        <item>@drawable/veintiocho</item>
+        <item>@drawable/veintinueve</item>
+        <item>@drawable/treinta</item>
+        <item>@drawable/treintaiuno</item>
+        <item>@drawable/treintaidos</item>
+        <item>@drawable/treintaitres</item>
+        <item>@drawable/treintaicuatro</item>
+        <item>@drawable/treintaicinco</item>
+    </array>
+   <array name="medidas_correctoras">
+
+       <item></item>
+
+    <item>No Procede/Sin incidencia</item>
+
+    <item>Se le corrige, cinturilla</item>
+
+    <item>Se le corrige, cintura y pies</item>
+
+    <item>Se le corrige, cintura, dorso y pies</item>
+
+    <item>Se le corrige, cinturilla y no llega a los pies</item>
+
+    <item>Se le corrige, cintura y sin guantes</item>
+
+    <item>Se le corrige, dorso</item>
+
+    <item>Se le corrige, espalda y sin guantes</item>
+
+    <item>Se le corrige, inspecion manual</item>
+
+    <item>Se le corrige, inspecion vehiculo</item>
+
+    <item>Se le corrige, toda la inspeccion</item>
+
+    <item>Se le corrige, bajos del pantalon</item>
+
+    <item>Se le corrige, movil</item>
+
+    <item>Se le corrige, no estar en el puesto</item>
+
+    <item>Se le corrige, pies y sin guantes</item>
+
+    <item>Se le corrige, pies</item>
+
+    <item>Se le corrige, postura y movil</item>
+
+    <item>No realiza correctamente el control Tia</item>
+
+    <item>Se le corrige, manda los empleados para atrás</item>
+   </array>
+
+    <array name="movimiento">
+        <item>"SALIDA"</item>
+        <item>"ENTRADA"</item>
+
+    </array>
+</resources>

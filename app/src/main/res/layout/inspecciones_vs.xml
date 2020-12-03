@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/T_ZAPATOS"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/texto_datosinspector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/DATOSINSPECTOR"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/S_INSPECTOR"
+        app:layout_constraintEnd_toEndOf="@+id/S_INSPECTOR"
+        app:layout_constraintStart_toStartOf="@+id/S_INSPECTOR"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/S_INSPECTOR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/boton_redondo_naranja"
+        app:layout_constraintEnd_toStartOf="@+id/HORA_inspeccion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_datosinspector" />
+
+    <EditText
+        android:id="@+id/HORA_inspeccion"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/Color_coral_red"
+        android:ems="14"
+        android:focusable="false"
+        android:hint="HORA"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/S_INSPECTOR"
+        app:layout_constraintEnd_toStartOf="@+id/FECHA"
+        app:layout_constraintStart_toEndOf="@+id/S_INSPECTOR"
+        app:layout_constraintTop_toTopOf="@+id/S_INSPECTOR"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/FECHA"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/Color_coral_red"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="FECHA"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/HORA_inspeccion"
+        app:layout_constraintEnd_toStartOf="@+id/S_PUESTO"
+        app:layout_constraintStart_toEndOf="@+id/HORA_inspeccion"
+        app:layout_constraintTop_toTopOf="@+id/HORA_inspeccion" />
+
+    <Spinner
+        android:id="@+id/S_PUESTO"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/boton_redondo_naranja"
+        app:layout_constraintBottom_toBottomOf="@+id/FECHA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FECHA"
+        app:layout_constraintTop_toTopOf="@+id/FECHA" />
+
+    <TextView
+        android:id="@+id/textView128"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/DATOSVS"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/s_TIP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S_INSPECTOR" />
+
+    <Spinner
+        android:id="@+id/s_TIP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/boton_redondo_naranja"
+        app:layout_constraintEnd_toEndOf="@+id/S_INSPECTOR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView128" />
+
+    <EditText
+        android:id="@+id/e_DNI"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/boton_redondo_azul"
+        android:ems="10"
+        android:focusable="false"
+
+        android:hint="DNI"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/s_TIP"
+        app:layout_constraintEnd_toStartOf="@+id/e_NOMBRE"
+        app:layout_constraintStart_toStartOf="@+id/HORA_inspeccion"
+        app:layout_constraintTop_toTopOf="@+id/s_TIP" />
+
+    <EditText
+        android:id="@+id/e_NOMBRE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/boton_redondo_azul"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="NOMBRE"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/e_DNI"
+        app:layout_constraintEnd_toStartOf="@+id/e_APELLIDO1"
+        app:layout_constraintStart_toEndOf="@+id/e_DNI"
+        app:layout_constraintTop_toTopOf="@+id/e_DNI" />
+
+    <EditText
+        android:id="@+id/e_APELLIDO1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="APELLIDO1"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/e_NOMBRE"
+        app:layout_constraintEnd_toStartOf="@+id/e_APELLIDO2"
+        app:layout_constraintStart_toEndOf="@+id/e_NOMBRE"
+        app:layout_constraintTop_toTopOf="@+id/e_NOMBRE" />
+
+    <EditText
+        android:id="@+id/e_APELLIDO2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/boton_redondo_azul"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="APELLIDO2"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/e_APELLIDO1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/e_APELLIDO1"
+        app:layout_constraintTop_toTopOf="@+id/e_APELLIDO1" />
+
+    <TextView
+        android:id="@+id/textView175"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/PRENDASUNI"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/s_TIP"
+        app:layout_constraintStart_toStartOf="@+id/s_TIP"
+        app:layout_constraintTop_toBottomOf="@+id/s_TIP"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/textView184"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/PUESTO"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/S_PUESTO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/S_PUESTO"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VS_INSPECCIONADO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="2dp"
+        android:textAlignment="textStart"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/S_PUESTO"
+        app:layout_constraintStart_toStartOf="@+id/S_PUESTO"
+        app:layout_constraintTop_toBottomOf="@+id/S_PUESTO" />
+
+    <TextView
+        android:id="@+id/textView127"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/ZP"
+        app:layout_constraintEnd_toStartOf="@+id/textView176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView175" />
+
+    <TextView
+        android:id="@+id/textView176"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/PANTALON"
+        app:layout_constraintEnd_toStartOf="@+id/textView178"
+        app:layout_constraintStart_toEndOf="@+id/textView127"
+        app:layout_constraintTop_toTopOf="@+id/textView127" />
+
+    <TextView
+        android:id="@+id/textView178"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/CAZADORA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView176"
+        app:layout_constraintTop_toTopOf="@+id/textView176" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_zapatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_pantalon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView127" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_pantalon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_cazadora"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_zapatos"
+        app:layout_constraintTop_toTopOf="@+id/sp_insvs_zapatos" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_cazadora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_pantalon"
+        app:layout_constraintTop_toTopOf="@+id/sp_insvs_pantalon" />
+
+    <TextView
+        android:id="@+id/textView179"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/CAMISA"
+        app:layout_constraintEnd_toStartOf="@+id/textView180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_insvs_zapatos" />
+
+    <TextView
+        android:id="@+id/textView180"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/ABRIGO"
+        app:layout_constraintEnd_toStartOf="@+id/textView181"
+        app:layout_constraintStart_toEndOf="@+id/textView179"
+        app:layout_constraintTop_toTopOf="@+id/textView179" />
+
+    <TextView
+        android:id="@+id/textView181"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/EPIS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView180"
+        app:layout_constraintTop_toTopOf="@+id/textView180" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_camisa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_abrigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView179" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_abrigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_epis"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_camisa"
+        app:layout_constraintTop_toTopOf="@+id/sp_insvs_camisa" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_epis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_abrigo"
+        app:layout_constraintTop_toBottomOf="@+id/textView180" />
+
+    <TextView
+        android:id="@+id/textView183"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ELEMENTOS"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/s_TIP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_insvs_camisa" />
+
+    <TextView
+        android:id="@+id/textView185"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/DEFENSA"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_defensa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView183" />
+
+    <TextView
+        android:id="@+id/textView187"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/GRILLETES"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_grilletes"
+        app:layout_constraintStart_toStartOf="@+id/sp_insvs_grilletes"
+        app:layout_constraintTop_toTopOf="@+id/textView185" />
+
+    <TextView
+        android:id="@+id/textView190"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/CORREAJES"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_epis"
+        app:layout_constraintStart_toStartOf="@+id/sp_insvs_correajes"
+        app:layout_constraintTop_toTopOf="@+id/textView187" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_defensa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_grilletes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView185" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_grilletes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/sp_insvs_correajes"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_defensa"
+        app:layout_constraintTop_toBottomOf="@+id/textView185" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_correajes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toStartOf="@+id/S_PUESTO"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_grilletes"
+        app:layout_constraintTop_toTopOf="@+id/sp_insvs_grilletes" />
+
+    <EditText
+        android:id="@+id/editText89"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rectangle"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="@string/OTROS"
+        android:inputType="none|textPersonName"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_insvs_correajes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/S_PUESTO"
+        app:layout_constraintTop_toTopOf="@+id/sp_insvs_correajes" />
+
+    <TextView
+        android:id="@+id/textView191"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/FUNCIONESPUESTO"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_camisa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_insvs_defensa" />
+
+    <TextView
+        android:id="@+id/textView192"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/DESEMPEÑO"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_defensa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView191" />
+
+    <Spinner
+        android:id="@+id/sp_insvs_desempeño"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/boton_redondo_rosa"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_defensa"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView192" />
+
+    <Button
+        android:id="@+id/button36"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:onClick="INSPECCIONES_MANUALES"
+        android:text="@string/INSPECCIONMANUAL"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_grilletes"
+        app:layout_constraintStart_toEndOf="@+id/sp_insvs_desempeño"
+        app:layout_constraintTop_toTopOf="@+id/sp_insvs_desempeño" />
+
+    <AutoCompleteTextView
+        android:id="@+id/editText90"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rectangle"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="@string/OBSERVACIONES"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHint="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="@+id/button36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button36"
+        app:layout_constraintTop_toTopOf="@+id/button36" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="32dp"
+        android:button="@drawable/checbox_background"
+        android:onClick="ORDENESPUESTO"
+        android:paddingLeft="5dp"
+        android:text="@string/ORDENESFIRMADAS"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/button36"
+        app:layout_constraintStart_toStartOf="@+id/sp_insvs_desempeño"
+        app:layout_constraintTop_toBottomOf="@+id/sp_insvs_desempeño" />
+
+    <CheckBox
+        android:id="@+id/ck_invs_CORRECTO_SI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checbox_background"
+        android:onClick="CAMBIOCHECK"
+        android:paddingLeft="5dp"
+        android:text="@string/CORRECTOSI"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/ck_invs_CORRECTO_NO"
+        app:layout_constraintStart_toStartOf="@+id/editText90"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/ck_invs_CORRECTO_NO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:button="@drawable/checbox_background"
+        android:checked="true"
+        android:onClick="CAMBIOCHECK1"
+        android:paddingLeft="5dp"
+        android:text="@string/CORRESTONO"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ck_invs_CORRECTO_SI"
+        app:layout_constraintTop_toTopOf="@+id/ck_invs_CORRECTO_SI" />
+
+    <Button
+        android:id="@+id/CMD_INSVS_GUARDAR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:onClick="guardar"
+        android:text="@string/GUARDAR"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ck_invs_CORRECTO_NO"
+        app:layout_constraintTop_toBottomOf="@+id/ck_invs_CORRECTO_NO" />
+
+    <EditText
+        android:id="@+id/editText91"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/boton_redondo_amarillo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sp_insvs_desempeño"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <TextView
+        android:id="@+id/text_insvs_mensaje"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/CMD_INSVS_GUARDAR"
+        app:layout_constraintStart_toEndOf="@+id/editText91"
+        app:layout_constraintTop_toTopOf="@+id/editText91" />
+
+</android.support.constraint.ConstraintLayout>

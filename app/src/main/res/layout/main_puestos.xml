@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView143"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/INSPECTOR"
+
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_INSPECTOR"
+        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+        android:layout_width="474dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/spinner_background"
+        android:pointerIcon="arrow"
+        android:popupBackground="@color/Color_coral_red"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="@+id/textView143"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView143" />
+
+    <EditText
+        android:id="@+id/PUESTOS_HORA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/boton_redondo_amarillo"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="HORA"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/s_PUESTOS_INSPECTOR"
+        app:layout_constraintEnd_toStartOf="@+id/PUESTOS_FECHA"
+        app:layout_constraintStart_toEndOf="@+id/s_PUESTOS_INSPECTOR"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_INSPECTOR"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/PUESTOS_FECHA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:background="@drawable/boton_redondo_amarillo"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:hint="FECHA"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/PUESTOS_HORA"
+        app:layout_constraintEnd_toStartOf="@+id/s_PUESTOS_PUESTO"
+        app:layout_constraintStart_toEndOf="@+id/PUESTOS_HORA"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_INSPECTOR"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_PUESTO"
+        style="@android:style/Widget.DeviceDefault.Light.Spinner"
+        android:layout_width="543dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:drawable/spinner_background"
+        android:pointerIcon="hand"
+        android:popupBackground="@color/Color_coral_red"
+        app:layout_constraintBottom_toBottomOf="@+id/s_PUESTOS_INSPECTOR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PUESTOS_FECHA"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_INSPECTOR" />
+
+    <TextView
+        android:id="@+id/textView144"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:shadowColor="@color/Color_coral_red"
+        android:text="@string/PUESTO"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/s_PUESTOS_PUESTO"
+        app:layout_constraintEnd_toEndOf="@+id/s_PUESTOS_PUESTO"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:shadowRadius="10" />
+
+    <TextView
+        android:id="@+id/textView145"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/DESPERFECTOS"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_INSPECTOR" />
+
+    <EditText
+        android:id="@+id/e_PUESTOS_DESPERFECTOS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/zoom_plate"
+        android:ems="10"
+        android:hint="DESPERFECTOS"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:text="NINGUNA"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/PUESTOS_HORA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+    <EditText
+        android:id="@+id/e_PUESTOS_RIESGOS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/zoom_plate"
+        android:ems="10"
+        android:hint="@string/RIESGOS"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/e_PUESTOS_OBSERVACIONES"
+        app:layout_constraintEnd_toEndOf="@+id/s_PUESTOS_PUESTO"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/e_PUESTOS_DESPERFECTOS"
+        app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+    <EditText
+        android:id="@+id/e_PUESTOS_OBSERVACIONES"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/zoom_plate"
+        android:ems="10"
+        android:hint="@string/OBSERVACIONES"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/e_PUESTOS_DESPERFECTOS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_PUESTOS_DESPERFECTOS" />
+
+    <TextView
+        android:id="@+id/textView146"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ADM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView147" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_ADM"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+    <TextView
+        android:id="@+id/textView147"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ELEMENTOS AUXILIARES"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_PUESTOS_OBSERVACIONES" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_MAQUINARX"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintBottom_toBottomOf="@+id/s_PUESTOS_ADM"
+        app:layout_constraintStart_toEndOf="@+id/s_PUESTOS_ADM"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_ADM" />
+
+    <TextView
+        android:id="@+id/textView148"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/MAQUINA"
+        app:layout_constraintBottom_toTopOf="@+id/s_PUESTOS_MAQUINARX"
+        app:layout_constraintStart_toStartOf="@+id/s_PUESTOS_MAQUINARX" />
+
+    <TextView
+        android:id="@+id/textView149"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/BARRERAS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_ADM" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_BARRERAS"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView149" />
+
+    <TextView
+        android:id="@+id/textView150"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TRAZAS"
+        app:layout_constraintBottom_toTopOf="@+id/s_PUESTOS_TRAZAS"
+        app:layout_constraintStart_toStartOf="@+id/s_PUESTOS_TRAZAS"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_MAQUINARX" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_TRAZAS"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toEndOf="@+id/s_PUESTOS_MAQUINARX"
+        app:layout_constraintStart_toEndOf="@+id/s_PUESTOS_BARRERAS"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_BARRERAS" />
+
+    <TextView
+        android:id="@+id/textView151"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/TORNOS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_BARRERAS" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_TORNOS"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_DETECTOR_LIQUIDOS"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintEnd_toEndOf="@+id/s_PUESTOS_TRAZAS"
+        app:layout_constraintStart_toStartOf="@+id/s_PUESTOS_TRAZAS"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_TORNOS" />
+
+    <TextView
+        android:id="@+id/textView152"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/DETECTOR"
+        app:layout_constraintBottom_toTopOf="@+id/s_PUESTOS_DETECTOR_LIQUIDOS"
+        app:layout_constraintStart_toStartOf="@+id/s_PUESTOS_DETECTOR_LIQUIDOS"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_TRAZAS" />
+
+    <TextView
+        android:id="@+id/textView153"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ZAPATOS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_TORNOS" />
+
+    <Spinner
+        android:id="@+id/s_PUESTOS_MAQUINA_ZAPATOS"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/boton_redondo_azul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView153" />
+
+    <CheckBox
+        android:id="@+id/CK_OTROS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="OTROS"
+        app:layout_constraintBottom_toBottomOf="@+id/e_PUESTOS_OBSERVACIONES"
+        app:layout_constraintStart_toEndOf="@+id/e_PUESTOS_OBSERVACIONES"
+        app:layout_constraintTop_toBottomOf="@+id/e_PUESTOS_RIESGOS" />
+
+    <CheckBox
+        android:id="@+id/CK_CALIBRADO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="CALIBRADO ADM"
+        app:layout_constraintBottom_toBottomOf="@+id/CK_OTROS"
+        app:layout_constraintStart_toEndOf="@+id/CK_OTROS" />
+
+    <CheckBox
+        android:id="@+id/CK_ORDENES"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="ORDENES DEL PUESTO"
+        app:layout_constraintBottom_toBottomOf="@+id/CK_CALIBRADO"
+        app:layout_constraintStart_toEndOf="@+id/CK_CALIBRADO" />
+
+    <Button
+        android:id="@+id/B_PUESTO_PRIMERO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/boton_redondo_gris"
+
+        android:drawableLeft="@android:drawable/ic_media_previous"
+        android:onClick="BOTON_PRIMER"
+        android:text="@string/PRIMERO"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/B_PUESTO_ANTERIOR"
+        app:layout_constraintStart_toEndOf="@+id/s_PUESTOS_DETECTOR_LIQUIDOS" />
+
+    <Button
+        android:id="@+id/B_PUESTO_ANTERIOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableLeft="@android:drawable/ic_media_rew"
+        android:onClick="BOTON_ANTERIOR"
+        android:paddingHorizontal="10dp"
+        android:text="@string/ANTER"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/B_PUESTO_SIGUIENTE"
+        app:layout_constraintStart_toEndOf="@+id/B_PUESTO_PRIMERO" />
+
+    <Button
+        android:id="@+id/B_PUESTO_SIGUIENTE"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableRight="@android:drawable/ic_media_ff"
+        android:onClick="recycle"
+        android:paddingHorizontal="10dp"
+        android:text="@string/SIGUIENTE"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/B_PUESTO_ULTIMO"
+        app:layout_constraintStart_toEndOf="@+id/B_PUESTO_ANTERIOR"
+        app:layout_constraintTop_toTopOf="@+id/B_PUESTO_ULTIMO" />
+
+    <Button
+        android:id="@+id/B_PUESTO_ULTIMO"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableRight="@android:drawable/ic_menu_revert"
+        android:onClick="SALIR"
+        android:paddingHorizontal="10dp"
+        android:text="@string/SALIR"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/B_PUESTO_SIGUIENTE"
+        app:layout_constraintTop_toTopOf="@+id/button6" />
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        style="@android:style/Widget.Material.ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/darker_gray"
+        android:fillViewport="false"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/s_PUESTOS_MAQUINARX"
+        app:layout_constraintTop_toBottomOf="@+id/CK_OTROS">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/boton_PUESTOS_foto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo_verde"
+                android:drawableLeft="@android:drawable/ic_menu_camera"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+
+                android:onClick="boton_TOMARFOTO1"
+                android:paddingHorizontal="25dp"
+                android:text="@string/FOTO1" />
+
+            <ImageView
+                android:id="@+id/imageView_foto1"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fondo_foto"
+                tools:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/boton_PUESTOS_foto2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo_verde"
+                android:drawableLeft="@android:drawable/ic_menu_camera"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:onClick="boton_TOMARFOTO2"
+                android:paddingHorizontal="25dp"
+                android:text="@string/FOTO2" />
+
+            <ImageView
+                android:id="@+id/imageView_foto2"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fondo_foto" />
+
+            <Button
+                android:id="@+id/boton_PUESTOS_foto3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo_verde"
+                android:drawableLeft="@android:drawable/ic_menu_camera"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:onClick="boton_TOMARFOTO3"
+                android:paddingHorizontal="25dp"
+                android:text="@string/FOTO3" />
+
+            <ImageView
+                android:id="@+id/imageView_foto3"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:contentDescription="FOTOGRAFIA 3"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fondo_foto" />
+
+            <Button
+                android:id="@+id/boton_PUESTOS_foto4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="85dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_redondo_verde"
+                android:drawableLeft="@android:drawable/ic_menu_camera"
+                android:drawableRight="@android:drawable/ic_menu_camera"
+                android:onClick="boton_TOMARFOTO4"
+                android:paddingHorizontal="25dp"
+                android:text="@string/FOTO4" />
+
+            <ImageView
+                android:id="@+id/imageView_foto4"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fondo_foto" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BOTON_PUESTOS_GUARDAR"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:contentDescription="GUARDAR DATOS"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:drawableTint="?attr/colorError"
+        android:onClick="guardarREGISTRO"
+        android:paddingHorizontal="15dp"
+        android:text="@string/GUARDAR"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="@+id/textView147"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/BOTON_PUESTOS_VER"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:onClick="VER_REGISTROS"
+        android:text="@string/VEREGISTROS"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/s_PUESTOS_DETECTOR_LIQUIDOS"
+        app:layout_constraintStart_toEndOf="@+id/BOTON_PUESTOS_GUARDAR"
+        app:layout_constraintTop_toBottomOf="@+id/s_PUESTOS_MAQUINA_ZAPATOS" />
+
+    <TextView
+        android:id="@+id/PUESTO_REG"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/boton_redondo_amarillo"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/s_PUESTOS_MAQUINA_ZAPATOS"
+        app:layout_constraintEnd_toEndOf="@+id/s_PUESTOS_DETECTOR_LIQUIDOS"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/s_PUESTOS_DETECTOR_LIQUIDOS"
+        app:layout_constraintTop_toTopOf="@+id/s_PUESTOS_MAQUINA_ZAPATOS"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/CK_PROCEDIMIENTOS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/PROCEDIMIENTOS"
+        app:layout_constraintBottom_toBottomOf="@+id/CK_ORDENES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CK_ORDENES" />
+
+    <TextView
+        android:id="@+id/titulo_puesto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/s_PUESTOS_PUESTO"
+        app:layout_constraintEnd_toStartOf="@+id/textView144"
+        app:layout_constraintStart_toStartOf="@+id/s_PUESTOS_PUESTO" />
+
+    <CheckBox
+        android:id="@+id/CK_CORREGIDO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="32dp"
+        android:text="CheckBox"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/e_PUESTOS_OBSERVACIONES"
+        app:layout_constraintStart_toEndOf="@+id/textView147"
+        app:layout_constraintTop_toTopOf="@+id/textView147" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableLeft="?android:attr/actionModeWebSearchDrawable"
+        android:drawablePadding="10dp"
+        android:onClick="VER_REGISTROS_PUESTOS"
+        android:paddingHorizontal="15dp"
+        android:text="@string/VEREGISTROS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PUESTO_REG"
+        app:layout_constraintStart_toEndOf="@+id/textView148"
+        app:layout_constraintTop_toTopOf="@+id/BOTON_PUESTOS_VER" />
+
+
+</android.support.constraint.ConstraintLayout>

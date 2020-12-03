@@ -1,0 +1,438 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.eulen.inspector.Inspecciones_manuales">
+
+    <TextView android:text="INSPECCIONES MANUALES:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titulo" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CINTURILLA"
+        android:id="@+id/radio_CINTURILLA"
+        android:checked="false"
+        android:onClick="CINTURILLA"
+        android:layout_alignBottom="@+id/t_cinturilla"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUSLO ENTREPIERNAS Y PIERNA"
+        android:id="@+id/radio_MUSLO_ENTREPIERNAS_PIERNA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:onClick="MUSLO_ENTREPIERNAS_PIERNA"
+        android:visibility="invisible"
+        android:layout_below="@+id/radio_CINTURILLA" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NINGUNA"
+        android:id="@+id/radio_NINGUNA"
+        android:layout_below="@+id/radio_MUSLO_ENTREPIERNAS_PIERNA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="true"
+        android:onClick="NINGUNA"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:id="@+id/button18"
+        android:onClick="volver"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:drawablePadding="8dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:textSize="12dp"
+        android:layout_alignStart="@+id/textView98" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_tip"
+        android:layout_below="@+id/titulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/radio_MUSLO_ENTREPIERNAS_PIERNA"
+        android:layout_alignEnd="@+id/radio_MUSLO_ENTREPIERNAS_PIERNA"
+        android:background="#ffdbfffd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/E_VS"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_alignBottom="@+id/spinner_tip"
+        android:layout_toRightOf="@+id/spinner_tip"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:background="#ffe8e4e1"
+        android:layout_alignTop="@+id/spinner_tip"
+        android:layout_alignEnd="@+id/BT_GUARDAR" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/E_VS"
+        android:layout_toStartOf="@+id/E_VS"
+        android:layout_below="@+id/spinner_tip" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/BT_GUARDAR"
+        android:onClick="GUARDAR_INSPECCION"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:drawablePadding="8dp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/t_cinturilla"
+        android:checked="false"
+        android:textOn="MAL"
+        android:textOff="BIEN"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="CINTURILLA"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="2dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/E_VS"
+        android:layout_toStartOf="@+id/E_VS"
+        android:src="@drawable/cin_tur"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/fecha"
+        android:layout_above="@+id/t_cinturilla" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/E_VS"
+        android:layout_alignStart="@+id/E_VS"
+        android:layout_below="@+id/fecha"
+        android:layout_toStartOf="@+id/imageView4"
+        android:src="@drawable/cu_ello"
+        android:scaleType="fitXY"
+        android:layout_alignEnd="@+id/textView95"
+        android:layout_marginRight="50dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/hom_bra"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/t_hombros_brazos"
+        android:layout_alignStart="@+id/t_hombros_brazos"
+        android:layout_toLeftOf="@+id/textView97"
+        android:layout_toStartOf="@+id/textView97" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New             Text"
+        android:id="@+id/textView95"
+        android:layout_above="@+id/E_VS"
+        android:layout_toRightOf="@+id/E_VS"
+        android:layout_toEndOf="@+id/E_VS"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New                                             Text"
+        android:id="@+id/textView96"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:visibility="invisible"
+        android:layout_above="@+id/E_VS"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/mus_entr"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toLeftOf="@+id/textView96"
+        android:layout_toEndOf="@+id/imageView6"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_alignLeft="@+id/t_hombros_brazos"
+        android:layout_alignStart="@+id/t_hombros_brazos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView97"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_alignTop="@+id/textView96" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:src="@drawable/tor_espal"
+        android:scaleType="fitXY"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignLeft="@+id/t_cuello"
+        android:layout_alignStart="@+id/t_cuello"
+        android:layout_toStartOf="@+id/BT_GUARDAR"
+        android:layout_alignBottom="@+id/imageView7"
+        android:layout_alignEnd="@+id/textView95"
+        android:layout_marginRight="50dp" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/t_cuello"
+        android:textOn="MAL"
+        android:textOff="BIEN"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:checked="false"
+        android:onClick="CUELLO"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="2dp" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/t_hombros_brazos"
+        android:textOn="MAL"
+        android:textOff="BIEN"
+        android:checked="false"
+        android:layout_alignTop="@+id/t_cuello"
+        android:layout_toRightOf="@+id/textView95"
+        android:layout_toEndOf="@+id/textView95"
+        android:onClick="HOMBROS"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="2dp" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/t_muslo_entrepierna"
+        android:textOn="MAL"
+        android:textOff="BIEN"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:checked="false"
+        android:onClick="MUSLO_ENTREPIERNAS_PIERNA"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="2dp" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:textOn="MAL"
+        android:textOff="BIEN"
+        android:id="@+id/t_torso_espalda"
+        android:checked="false"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:onClick="TORSO_ESPALDA"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="2dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/radio_NINGUNA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/radio_MUSLO_ENTREPIERNAS_PIERNA"
+        android:layout_alignEnd="@+id/radio_MUSLO_ENTREPIERNAS_PIERNA"
+        android:src="@drawable/emp_zap"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/T_empeine_zapato" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/T_empeine_zapato"
+        android:textOn="MAL"
+        android:textOff="BIEN"
+        android:layout_above="@+id/button18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:onClick="EMPEINE_ZAPATO"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginTop="2dp" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/T_NINGUNA"
+        android:textOn="NINGUNA"
+        android:textOff="ALGUNA"
+        android:layout_alignTop="@+id/BT_GUARDAR"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView97"
+        android:layout_alignStart="@+id/textView97"
+        android:checked="true"
+        android:onClick="NINGUNA"
+        android:background="@android:color/holo_green_light" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_INSPECTOR"
+        android:background="#ffffbd3b"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView95"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CINTURILLA"
+        android:id="@+id/textView98"
+        android:layout_alignTop="@+id/t_cinturilla"
+        android:layout_toLeftOf="@+id/E_VS"
+        android:layout_toStartOf="@+id/E_VS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CUELLO"
+        android:id="@+id/textView99"
+        android:layout_below="@+id/imageView3"
+        android:layout_toLeftOf="@+id/textView95"
+        android:layout_toStartOf="@+id/textView95" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HOMBROS Y BRAZOS"
+        android:id="@+id/textView100"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="EMPEINE ZAPATOS"
+        android:id="@+id/textView101"
+        android:layout_alignTop="@+id/t_torso_espalda"
+        android:layout_alignBottom="@+id/textView102"
+        android:layout_alignEnd="@+id/button18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TORSO Y ESPALDA"
+        android:id="@+id/textView102"
+        android:layout_alignTop="@+id/t_torso_espalda"
+        android:layout_toLeftOf="@+id/textView95"
+        android:layout_toStartOf="@+id/textView95" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MUSLO Y ENTREPIERNA"
+        android:id="@+id/textView103"
+        android:layout_alignLeft="@+id/textView100"
+        android:layout_alignStart="@+id/textView100"
+        android:layout_alignTop="@+id/t_muslo_entrepierna"
+        android:layout_alignRight="@+id/textView100"
+        android:layout_alignEnd="@+id/textView100" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HORA_inspeccion"
+        android:clickable="false"
+        android:editable="false"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/fecha"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_toLeftOf="@+id/textView102"
+        android:layout_toStartOf="@+id/textView102" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_PUESTO"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spinner_INSPECTOR"
+        android:background="#ffe0b3ff"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>

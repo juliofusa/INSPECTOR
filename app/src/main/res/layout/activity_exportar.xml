@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.julio.inspector.EXPORTAR"
+    android:id="@+id/text">
+
+    <TextView android:text="EXPORTACION " android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView23"
+        android:textColor="#ff000000"
+        android:layout_alignRight="@+id/EX_B_INSPECCIONVS"
+        android:layout_alignEnd="@+id/EX_B_INSPECCIONVS"
+        android:layout_alignTop="@+id/checkPUESTO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffffff48" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSPECCIONES VIGILANTES."
+        android:id="@+id/checkINSPECIONESVS"
+        android:checked="false"
+        android:onClick="verINSPECIONESVS"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_toRightOf="@+id/EX_B_INSPECCIONVS"
+        android:layout_toEndOf="@+id/EX_B_INSPECCIONVS"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPORTAR INSPECCION VS"
+        android:id="@+id/BTexportar"
+        android:onClick="exportarvs"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/bt_puesto"
+        android:layout_alignRight="@+id/textView_FECHA_DESDE"
+        android:layout_alignEnd="@+id/textView_FECHA_DESDE" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POR INSPECTOR"
+        android:id="@+id/checkINSPECTOR"
+        android:checked="false"
+        android:layout_toRightOf="@+id/checkINSPECIONESVS"
+        android:layout_toEndOf="@+id/checkINSPECIONESVS"
+        android:layout_below="@+id/checkINSPECIONESVS"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POR                                                                                                               VIGILANTE"
+        android:id="@+id/checkVS"
+        android:layout_below="@+id/checkINSPECTOR"
+        android:layout_alignLeft="@+id/checkINSPECTOR"
+        android:layout_alignStart="@+id/checkINSPECTOR"
+        android:checked="false"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POR PUESTO"
+        android:id="@+id/checkPUESTO"
+        android:layout_alignLeft="@+id/checkVS"
+        android:layout_alignStart="@+id/checkVS"
+        android:checked="false"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POR FECHA"
+        android:id="@+id/checkFECHA"
+        android:layout_below="@+id/checkPUESTO"
+        android:layout_alignLeft="@+id/checkPUESTO"
+        android:layout_alignStart="@+id/checkPUESTO"
+        android:checked="false"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TODOS LOS REGISTROS"
+        android:id="@+id/EX_TODOSLOSREGISTROS"
+        android:checked="false"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/checkINSPECIONESVS"
+        android:layout_alignStart="@+id/checkINSPECIONESVS"
+        android:layout_toLeftOf="@+id/checkVS"
+        android:layout_toStartOf="@+id/checkVS"
+        android:onClick="check_todos" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/checkVS"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="123dp"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EX_B_INSPECCIONPUESTO"
+        android:src="@drawable/pue_sto"
+        android:scaleType="centerInside"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="EXPORT_BOTON_INSPECCIONPUESTO"
+        android:layout_below="@+id/EX_B_ENSAYO" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EX_B_ENSAYO"
+        android:src="@drawable/ens_ayo"
+        android:scaleType="centerInside"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/EX_B_INSPECCIONPUESTO"
+        android:layout_alignEnd="@+id/EX_B_INSPECCIONPUESTO"
+        android:onClick="EXPORT_BOTON_ENSAYO"
+        android:layout_below="@+id/EX_B_INSPECCIONVS"
+        android:layout_alignBottom="@+id/FILTRO_fechahasta" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EX_B_INSPECCIONVS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ins_vs"
+        android:scaleType="centerInside"
+        android:layout_alignRight="@+id/EX_B_ENSAYO"
+        android:layout_alignEnd="@+id/EX_B_ENSAYO"
+        android:layout_below="@+id/textView23"
+        android:layout_above="@+id/EX_TODOSLOSREGISTROS"
+        android:onClick="EXPORT_BOTON_INSPECCIONVS" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EX_FECHA_DESDE"
+        android:background="#4b4de5ff"
+        android:transitionGroup="false"
+        android:layout_alignTop="@+id/EX_TODOSLOSREGISTROS"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/checkFECHA"
+        android:layout_alignRight="@+id/checkVS"
+        android:layout_alignEnd="@+id/checkVS" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EX_FECHA_HASTA"
+        android:background="#a0faff51"
+        android:visibility="visible"
+        android:layout_below="@+id/textView_FECHA_HASTA"
+        android:layout_alignLeft="@+id/EX_FECHA_DESDE"
+        android:layout_alignStart="@+id/EX_FECHA_DESDE"
+        android:layout_alignRight="@+id/textView_FECHA_DESDE"
+        android:layout_alignEnd="@+id/textView_FECHA_DESDE" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SELECCIONE PARA EXPORTAR: INSPECCION VS,ENSAYO,INSPECCION PUESTO"
+        android:id="@+id/EX_PANEL"
+        android:layout_alignLeft="@+id/checkINSPECIONESVS"
+        android:layout_alignStart="@+id/checkINSPECIONESVS"
+        android:background="#ffb6ff9a"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/checkPUESTO"
+        android:layout_alignRight="@+id/checkVS"
+        android:layout_alignEnd="@+id/checkVS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPORTAR INSPECCION PUESTO"
+        android:id="@+id/bt_puesto"
+        android:onClick="exportar_puesto"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/EX_B_INSPECCIONPUESTO"
+        android:layout_alignRight="@+id/EX_FECHA_HASTA"
+        android:layout_alignEnd="@+id/EX_FECHA_HASTA"
+        android:layout_marginBottom="60dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXPORTAR ENSAYO"
+        android:id="@+id/bt_ensayo"
+        android:onClick="expotar_ensayos"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/BTexportar"
+        android:layout_alignRight="@+id/textView_FECHA_HASTA"
+        android:layout_alignEnd="@+id/textView_FECHA_HASTA"
+        android:layout_alignLeft="@+id/BTexportar"
+        android:layout_alignStart="@+id/BTexportar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FECHA DESDE"
+        android:id="@+id/textView_FECHA_DESDE"
+        android:layout_above="@+id/EX_FECHA_DESDE"
+        android:layout_alignLeft="@+id/textView_FECHA_HASTA"
+        android:layout_alignStart="@+id/textView_FECHA_HASTA"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FECHA HASTA"
+        android:id="@+id/textView_FECHA_HASTA"
+        android:layout_below="@+id/EX_FECHA_DESDE"
+        android:layout_alignRight="@+id/EX_FECHA_DESDE"
+        android:layout_alignEnd="@+id/EX_FECHA_DESDE"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/FILTRO_fechadesde"
+        android:layout_below="@+id/EX_TODOSLOSREGISTROS"
+        android:layout_alignLeft="@+id/EX_TODOSLOSREGISTROS"
+        android:layout_alignStart="@+id/EX_TODOSLOSREGISTROS"
+        android:hint="FECHA DESDE"
+        android:enabled="false"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/FILTRO_fechahasta"
+        android:hint="FECHA HASTA"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:visibility="invisible"
+        android:enabled="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/FILTRO_fechadesde"
+        android:layout_alignRight="@+id/EX_TODOSLOSREGISTROS"
+        android:layout_alignEnd="@+id/EX_TODOSLOSREGISTROS"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,591 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.eulen.inspector.ROPA"
+    android:id="@+id/as1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ENTREGA DE ROPA"
+        android:id="@+id/textView79"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_DESCRIPCION"
+        android:background="#ffb2e5ff"
+        android:layout_below="@+id/textView83"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/ROPA_TALLA"
+        android:layout_alignEnd="@+id/ROPA_TALLA"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ROPA_TALLA"
+        android:hint="TALLA"
+        android:gravity="center_horizontal"
+        android:clickable="false"
+        android:editable="false"
+        android:layout_below="@+id/ROPA_OTROS"
+        android:layout_alignLeft="@+id/ROPA_FECHA"
+        android:layout_alignStart="@+id/ROPA_FECHA"
+        android:textColor="#ff0e12ff"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ROPA_CANTIDAD"
+        android:hint="CANTIDAD"
+        android:gravity="center_horizontal"
+
+        android:singleLine="true"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/ROPA_TALLA"
+        android:layout_alignLeft="@+id/ROPA_TALLA"
+        android:layout_alignStart="@+id/ROPA_TALLA"
+        android:layout_marginTop="61dp"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/ROPA_OTROS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ROPA_DESCRIPCION"
+        android:layout_alignRight="@+id/ROPA_DESCRIPCION"
+        android:layout_below="@+id/ROPA_DESCRIPCION"
+        android:layout_toEndOf="@+id/button16"
+        android:layout_toRightOf="@+id/button16"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="OTROS"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="NOMBRE "
+        android:id="@+id/textView80"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView79" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_NOMBRE"
+        android:layout_below="@+id/textView80"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView111"
+        android:background="#ffffd9b7"
+        android:layout_toLeftOf="@+id/textView111" />
+
+    <EditText
+        android:id="@+id/ROPA_FECHA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ROPA_NOMBRE"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_toEndOf="@+id/button16"
+        android:layout_toRightOf="@+id/button16"
+        android:background="@drawable/rectangle"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="FECHA"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="#ffff1703" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/button16"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="GUARDAR_ROPA"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FECHA: "
+        android:id="@+id/textView82"
+        android:layout_alignBottom="@+id/ROPA_FECHA"
+        android:layout_toStartOf="@+id/textView85"
+        android:layout_alignRight="@+id/textView81"
+        android:layout_alignEnd="@+id/textView81" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CANTIDAD: "
+        android:id="@+id/textView84"
+        android:layout_alignBaseline="@+id/ROPA_CANTIDAD"
+        android:layout_alignBottom="@+id/ROPA_CANTIDAD"
+        android:layout_toLeftOf="@+id/ROPA_CANTIDAD"
+        android:layout_toStartOf="@+id/ROPA_CANTIDAD"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TALLA: "
+        android:id="@+id/textView81"
+        android:layout_alignBaseline="@+id/ROPA_TALLA"
+        android:layout_alignBottom="@+id/ROPA_TALLA"
+        android:layout_toLeftOf="@+id/ROPA_TALLA"
+        android:layout_toStartOf="@+id/ROPA_TALLA"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DESCRIPCION DE LA PRENDA 1: "
+        android:id="@+id/textView83"
+        android:layout_below="@+id/ROPA_FECHA"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ROPA_IDPRODUCTO"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/ROPA_TALLA"
+        android:layout_alignRight="@+id/ROPA_OTROS"
+        android:layout_alignEnd="@+id/ROPA_OTROS"
+        android:textColor="#ff90c11b"
+        android:hint="ID PRODUCTO"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="ID-PRODUCTO: "
+        android:id="@+id/textView85"
+        android:gravity="center_horizontal"
+        android:layout_alignBaseline="@+id/ROPA_IDPRODUCTO"
+        android:layout_alignBottom="@+id/ROPA_IDPRODUCTO"
+        android:layout_toLeftOf="@+id/ROPA_IDPRODUCTO"
+        android:layout_toStartOf="@+id/ROPA_IDPRODUCTO"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TT"
+        android:id="@+id/textView111"
+        android:layout_above="@+id/textView113"
+        android:layout_toRightOf="@+id/ROPA_FECHA"
+        android:layout_toEndOf="@+id/ROPA_FECHA"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large                                       Text"
+        android:id="@+id/textView112"
+        android:layout_alignBottom="@+id/textView111"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DESCRIPCION DE LA PRENDA 1:"
+        android:id="@+id/textView113"
+        android:layout_above="@+id/ROPA_NOMBRE"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_DESCRIPCION_1"
+        android:layout_below="@+id/textView113"
+        android:layout_alignRight="@+id/textView112"
+        android:layout_alignEnd="@+id/textView112"
+        android:background="#ffb2e5ff"
+        android:layout_alignLeft="@+id/textView111"
+        android:layout_alignStart="@+id/textView111" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CANTIDAD"
+        android:id="@+id/textView114"
+        android:layout_below="@+id/textView112"
+        android:layout_toRightOf="@+id/ROPA_DESCRIPCION_1"
+        android:layout_toEndOf="@+id/ROPA_DESCRIPCION_1"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CANTIDAD1"
+        android:layout_alignTop="@+id/ROPA_DESCRIPCION_1"
+        android:layout_alignLeft="@+id/textView114"
+        android:layout_alignStart="@+id/textView114"
+        android:layout_alignRight="@+id/textView114"
+        android:layout_alignEnd="@+id/textView114"
+        android:background="#ffb2e5ff"
+        android:layout_above="@+id/ROPA_FECHA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DESCRIPCION DE LA PRENDA 2:"
+        android:id="@+id/textView115"
+        android:layout_alignBottom="@+id/ROPA_FECHA"
+        android:layout_alignLeft="@+id/textView113"
+        android:layout_alignStart="@+id/textView113"
+        android:layout_alignRight="@+id/textView113"
+        android:layout_alignEnd="@+id/textView113"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_DESCRIPCION_2"
+        android:layout_below="@+id/textView115"
+        android:layout_alignLeft="@+id/textView111"
+        android:layout_alignStart="@+id/textView111"
+        android:layout_toLeftOf="@+id/textView114"
+        android:layout_toStartOf="@+id/textView114"
+        android:background="@android:color/holo_orange_light"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CANTIDAD "
+        android:id="@+id/textView116"
+        android:layout_alignTop="@+id/textView115"
+        android:layout_alignLeft="@+id/CANTIDAD1"
+        android:layout_alignStart="@+id/CANTIDAD1"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CANTIDAD2"
+        android:layout_below="@+id/textView116"
+        android:layout_alignLeft="@+id/textView116"
+        android:layout_alignStart="@+id/textView116"
+        android:layout_alignRight="@+id/textView116"
+        android:layout_alignEnd="@+id/textView116"
+        android:background="@android:color/holo_orange_light"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DESCRIPCION DE LA PRENDA 3:"
+        android:id="@+id/textView117"
+        android:layout_alignBottom="@+id/ROPA_DESCRIPCION"
+        android:layout_alignLeft="@+id/textView115"
+        android:layout_alignStart="@+id/textView115"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_DESCRIPCION_3"
+        android:layout_alignTop="@+id/ROPA_OTROS"
+        android:layout_alignLeft="@+id/ROPA_DESCRIPCION_2"
+        android:layout_alignStart="@+id/ROPA_DESCRIPCION_2"
+        android:layout_toLeftOf="@+id/textView114"
+        android:layout_toStartOf="@+id/textView114"
+        android:background="#ffe3e8ba"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CANTIDAD"
+        android:id="@+id/textView118"
+        android:layout_alignTop="@+id/textView117"
+        android:layout_alignLeft="@+id/CANTIDAD2"
+        android:layout_alignStart="@+id/CANTIDAD2"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CANTIDAD3"
+        android:layout_alignTop="@+id/ROPA_DESCRIPCION_3"
+        android:layout_alignLeft="@+id/textView118"
+        android:layout_alignStart="@+id/textView118"
+        android:layout_alignRight="@+id/CANTIDAD2"
+        android:layout_alignEnd="@+id/CANTIDAD2"
+        android:background="#ffe3e8ba"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DESCRIPCION DE LA PRENDA 4:"
+        android:id="@+id/textView119"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView111"
+        android:layout_alignLeft="@+id/textView117"
+        android:layout_alignStart="@+id/textView117"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_DESCRIPCION_4"
+        android:layout_below="@+id/textView119"
+        android:layout_alignLeft="@+id/ROPA_DESCRIPCION_3"
+        android:layout_alignStart="@+id/ROPA_DESCRIPCION_3"
+        android:layout_toLeftOf="@+id/textView114"
+        android:layout_toStartOf="@+id/textView114"
+        android:background="@android:color/holo_purple"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CANTIDAD"
+        android:id="@+id/textView120"
+        android:layout_alignTop="@+id/textView119"
+        android:layout_alignLeft="@+id/CANTIDAD3"
+        android:layout_alignStart="@+id/CANTIDAD3"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CANTIDAD4"
+        android:layout_below="@+id/textView120"
+        android:layout_alignLeft="@+id/textView120"
+        android:layout_alignStart="@+id/textView120"
+        android:layout_alignRight="@+id/CANTIDAD3"
+        android:layout_alignEnd="@+id/CANTIDAD3"
+        android:background="@android:color/holo_purple"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DESCRIPCION DE LA PRENDA 5:"
+        android:id="@+id/textView121"
+        android:layout_below="@+id/ROPA_CANTIDAD"
+        android:layout_alignLeft="@+id/textView119"
+        android:layout_alignStart="@+id/textView119"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ROPA_DESCRIPCION_5"
+        android:layout_below="@+id/textView121"
+        android:layout_alignLeft="@+id/ROPA_DESCRIPCION_4"
+        android:layout_alignStart="@+id/ROPA_DESCRIPCION_4"
+        android:layout_alignRight="@+id/ROPA_DESCRIPCION_4"
+        android:layout_alignEnd="@+id/ROPA_DESCRIPCION_4"
+        android:background="#fffeff71"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CANTIDAD"
+        android:id="@+id/textView122"
+        android:layout_alignTop="@+id/textView121"
+        android:layout_alignLeft="@+id/CANTIDAD4"
+        android:layout_alignStart="@+id/CANTIDAD4"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CANTIDAD5"
+        android:layout_alignTop="@+id/ROPA_DESCRIPCION_5"
+        android:layout_alignLeft="@+id/textView122"
+        android:layout_alignStart="@+id/textView122"
+        android:layout_alignRight="@+id/CANTIDAD4"
+        android:layout_alignEnd="@+id/CANTIDAD4"
+        android:background="#fffeff71"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="TALLA"
+        android:id="@+id/textView123"
+        android:layout_above="@+id/CANTIDAD1"
+        android:layout_toRightOf="@+id/textView116"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView124"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_alignBaseline="@+id/textView114"
+        android:layout_alignBottom="@+id/textView114"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TALLAS1"
+        android:layout_below="@+id/textView123"
+        android:layout_alignLeft="@+id/textView123"
+        android:layout_alignStart="@+id/textView123"
+        android:background="#ffb2e5ff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TALLAS2"
+        android:layout_alignTop="@+id/CANTIDAD2"
+        android:layout_alignLeft="@+id/TALLAS1"
+        android:layout_alignStart="@+id/TALLAS1"
+        android:background="@android:color/holo_orange_light"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TALLAS3"
+        android:layout_alignTop="@+id/CANTIDAD3"
+        android:layout_alignLeft="@+id/TALLAS2"
+        android:layout_alignStart="@+id/TALLAS2"
+        android:background="#ffe3e8ba"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TALLAS4"
+        android:layout_alignTop="@+id/CANTIDAD4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/TALLAS3"
+        android:layout_alignStart="@+id/TALLAS3"
+        android:background="@android:color/holo_purple" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TALLAS5"
+        android:layout_alignTop="@+id/CANTIDAD5"
+        android:layout_alignLeft="@+id/TALLAS4"
+        android:layout_alignStart="@+id/TALLAS4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#fffeff71" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIRMAR"
+        android:id="@+id/button25"
+        android:layout_alignRight="@+id/textView83"
+        android:layout_alignEnd="@+id/textView83"
+        android:onClick="firmar"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B_FIRMAR_ROPA"
+        android:layout_below="@+id/ROPA_DESCRIPCION_3"
+        android:layout_alignLeft="@+id/ROPA_OTROS"
+        android:layout_alignStart="@+id/ROPA_OTROS"
+        android:layout_alignRight="@+id/ROPA_OTROS"
+        android:layout_alignEnd="@+id/ROPA_OTROS"
+        android:src="@drawable/fir_ma"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/ROPA_DESCRIPCION_5"
+        android:onClick="firmar"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/B_GUARDAR_ROPA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/TALLAS5"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/boton_redondo_gris"
+        android:onClick="GUARDAR_ROPA"
+        android:text="GUARDAR"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@+id/ROPA_DESCRIPCION_5"
+        android:background="@drawable/boton_redondo_amarillo" />
+
+</RelativeLayout>

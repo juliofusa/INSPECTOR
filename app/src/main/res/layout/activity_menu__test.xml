@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.julio.inspector.MENU_TEST"
+    android:background="@drawable/te_st">
+
+    <Spinner
+        android:id="@+id/spiner_test"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_alignEnd="@+id/spiner_vs"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView47"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/VER_PDF"
+        android:alpha="0.75"
+        android:background="@drawable/spiner_style"
+
+        android:overlapAnchor="false"
+        android:paddingLeft="5dp"
+        android:prompt="@string/prompt"
+        android:textAlignment="center"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spiner_vs"
+        android:layout_width="575dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView125"
+        android:layout_marginTop="15dp"
+        android:alpha="0.80"
+        android:background="#ffdcdcdc"
+        android:overlapAnchor="false"
+        android:paddingLeft="10dp"
+        android:prompt="@string/prompt"
+        android:textAlignment="gravity"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SELECCIONE FORMACION"
+        android:id="@+id/textView47"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SELECCIONE NOMBRE DE VIGILANTE:"
+        android:id="@+id/textView125"
+        android:layout_below="@+id/VER_PDF"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/INICIAR_TEST"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spiner_vs"
+        android:layout_marginTop="10dp"
+        android:alpha="0.95"
+        android:background="@android:color/transparent"
+        android:onClick="INICIAR_TEST"
+        android:scaleType="fitXY"
+        android:src="@drawable/iniciar_test"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEER FORMACION"
+        android:id="@+id/VER_PDF"
+        android:drawableTop="@drawable/pdf"
+        android:drawablePadding="8dp"
+        android:alpha="0.95"
+        android:textSize="25dp"
+        android:onClick="VER_PDF"
+        android:layout_below="@+id/spiner_test"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/INFOR_MACION"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spiner_test"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/spiner_test"
+        android:alpha="0.85"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/boton_informacion"
+        android:src="@drawable/infor_macion"
+        android:scaleType="fitXY"
+        android:alpha="0.85"
+        android:onClick="INFORMACION_FORMACION"
+        android:layout_above="@+id/VER_PDF"
+        android:layout_alignEnd="@+id/INFOR_MACION"
+        android:layout_alignTop="@+id/spiner_test" />
+
+    <Spinner
+        android:id="@+id/spinner_formador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spiner_test"
+        android:layout_alignStart="@+id/INFOR_MACION"
+        android:layout_alignTop="@+id/boton_informacion"
+        android:layout_toStartOf="@+id/boton_informacion"
+        android:alpha="0.75"
+        android:overlapAnchor="false"
+        android:background="#ffe5e5e5"
+        android:paddingLeft="50dp"
+        android:prompt="@string/prompt"
+        android:textAlignment="gravity"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FORMADOR"
+        android:id="@+id/textView129"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/spinner_formador"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/VS"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignBottom="@+id/VER_PDF"
+        android:layout_alignEnd="@+id/spiner_test"
+        android:layout_alignTop="@+id/INFOR_MACION"
+        android:layout_toEndOf="@+id/textView47"
+        android:alpha="0.95"
+        android:background="@drawable/boton_redondo"
+        android:onClick="VS"
+        android:text="V.S"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/AUX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/VS"
+        android:layout_alignStart="@+id/INFOR_MACION"
+        android:layout_alignTop="@+id/INFOR_MACION"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="85dp"
+        android:layout_toStartOf="@+id/textView129"
+        android:alpha="0.95"
+        android:background="@drawable/boton_redondo_naranja"
+        android:onClick="AUX"
+        android:text="AUX"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/Reinicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/INFOR_MACION"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:drawablePadding="4dp"
+        android:onClick="REINICIO"
+        android:paddingRight="4dp"
+        android:text="Reinicio"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/boton_redondo_gris"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:onClick="CERRAR"
+        android:text="@string/SALIR" />
+
+</RelativeLayout>
